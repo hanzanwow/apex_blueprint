@@ -59,8 +59,8 @@
 <!-- 01 — INVESTMENT OBJECTIVES & BENCHMARKS -->
 <section id="objectives">
   <div class="section-label">01 — Investment Objectives &amp; Benchmarks</div>
-  <div class="card-grid">
-    <div class="card card-accent" data-num="A">
+  <div class="bento-grid">
+    <div class="bento-card bento-4 bento-accent" data-num="A">
       <h3>Long-Term Portfolio</h3>
       <p class="card-desc">Annual and quarterly rebalancing using quantitative analysis and AI consensus to maximize risk-adjusted returns over extended holding periods. Focus on fundamental strength, valuation discipline, and macro trends.</p>
       <div class="pipe-tags">
@@ -69,7 +69,17 @@
         <span class="ptag ptag-yellow">Low Turnover</span>
       </div>
     </div>
-    <div class="card card-accent" data-num="B">
+    <div class="bento-card bento-2 bento-hero-purple bento-center">
+      <div class="bento-stat bench-long">17.5%+</div>
+      <div class="bento-stat-label">Long-Term Portfolio<br>Annual Return Target</div>
+      <p class="bento-stat-note">vs S&amp;P 500 ~10% p.a. — requires ~7.5pp consistent alpha.</p>
+    </div>
+    <div class="bento-card bento-2 bento-hero-red bento-center">
+      <div class="bento-stat bench-short">25%+</div>
+      <div class="bento-stat-label">Short-Term Portfolio<br>Annual Return Target</div>
+      <p class="bento-stat-note">High-volatility targeting. Strict drawdown control required year over year.</p>
+    </div>
+    <div class="bento-card bento-4 bento-red" data-num="B">
       <h3>Short-Term Portfolio</h3>
       <p class="card-desc">Weekly and monthly rebalancing targeting high-volatility opportunities. AI-driven momentum, mean-reversion, and event-driven signals to capture price swings over short horizons.</p>
       <div class="pipe-tags">
@@ -79,36 +89,24 @@
       </div>
     </div>
   </div>
-  <div class="bench-grid bench-grid-margin">
-    <div class="bench-card">
-      <div class="bench-pct bench-long">17.5%+</div>
-      <div class="bench-label">Long-Term Portfolio<br>Annual Return Target</div>
-      <p class="bench-desc">vs S&amp;P 500 historical average ~10% p.a. Requires consistent alpha generation of ~7.5pp above benchmark.</p>
-    </div>
-    <div class="bench-card">
-      <div class="bench-pct bench-short">25%+</div>
-      <div class="bench-label">Short-Term Portfolio<br>Annual Return Target</div>
-      <p class="bench-desc">High-volatility targeting. Requires disciplined entry/exit signals and strict drawdown control to sustain year over year.</p>
-    </div>
-  </div>
 </section>
 
 <!-- 02 — CAPITAL ALLOCATION & POSITION SIZING -->
 <section id="allocation">
   <div class="section-label">02 — Capital Allocation &amp; Position Sizing</div>
-  <div class="card-grid card-grid-margin">
-    <div class="card card-gold" data-num="฿">
+  <div class="bento-grid">
+    <div class="bento-card bento-2 bento-row-2 bento-gold bento-hero-gold" data-num="฿">
       <h3>Starting Capital</h3>
       <p class="currency-large">฿500,000</p>
       <p class="text-regular">Total capital deployed to live trading at Month 9, after paper trading validation. Lean starting position intentional for first-year R&amp;D phase.</p>
     </div>
-    <div class="card card-gold" data-num="%">
+    <div class="bento-card bento-4 bento-gold" data-num="%">
       <h3>Portfolio Split — 70 / 30</h3>
       <p class="allocation-text"><strong class="allocation-highlight">Long-Term: ฿350,000 (70%)</strong></p>
       <p class="allocation-text"><strong class="allocation-short">Short-Term: ฿150,000 (30%)</strong></p>
       <p class="text-small">Balanced allocation tilted toward long-term during Year 1 while system is validated, aligned with DBS macro accumulation thesis.</p>
     </div>
-    <div class="card card-gold" data-num="→">
+    <div class="bento-card bento-4 bento-gold" data-num="→">
       <h3>Deployment Pace</h3>
       <p class="text-bright">Full deployment at Month 9</p>
       <p class="text-regular">Entire ฿500K deployed in single event at Month 9 once paper trading gate passes. Requires strong paper trading results; DBS Phase 3 consultation serves as the final sanity check before commitment.</p>
@@ -650,8 +648,8 @@
 <section>
   <div class="section-label">07 — Broker &amp; Execution Layer</div>
 
-  <div class="card-grid card-grid-margin">
-    <div class="card card-gold" data-num="LT">
+  <div class="bento-grid">
+    <div class="bento-card bento-2 bento-gold" data-num="LT">
       <h3>Long-Term — Manual Execution</h3>
       <p class="text-regular">No broker API required. Trades placed manually by owner after owner-AI discussion session.</p>
       <ul>
@@ -661,7 +659,7 @@
         <li>No speed pressure — long-term trades are not time-critical</li>
       </ul>
     </div>
-    <div class="card card-red" data-num="ST">
+    <div class="bento-card bento-4 bento-red" data-num="ST">
       <h3>Short-Term — Semi-Auto via API</h3>
       <p class="text-regular">Broker API integration required for speed. Broker selection TBD during Month 1–2 evaluation window.</p>
       <ul>
