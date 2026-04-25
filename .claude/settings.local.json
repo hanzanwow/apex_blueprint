@@ -13,7 +13,9 @@
       "Bash(git -C c:/Users/WACHIRATHAMSATIT/Desktop/apex_blueprint push -u origin refactor/extract-inline-css)",
       "Bash(git -C c:/Users/WACHIRATHAMSATIT/Desktop/apex_blueprint remote -v)",
       "Bash(gh auth *)",
-      "Bash(ssh -T git@github.com)"
+      "Bash(ssh -T git@github.com)",
+      "Bash(git checkout *)",
+      "Bash(npm run *)"
     ]
   }
 }
