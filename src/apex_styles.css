@@ -33,6 +33,9 @@
   --gold2: #ffe47e;
   --gold-dim: rgba(255, 228, 126, 0.22);
 
+  --bg2: rgba(255, 255, 255, 0.03);
+  --bg3: rgba(255, 255, 255, 0.07);
+
   --glass-shadow: 0 14px 40px rgba(5, 10, 30, 0.35), inset 0 1px 0 rgba(255,255,255,0.08);
 }
 
@@ -1319,3 +1322,202 @@ footer { position: relative; z-index: 2; }
   backdrop-filter: blur(10px);
 }
 ::-webkit-scrollbar-thumb:hover { background: var(--border-strong); }
+
+/* ── Sections 12–17 inline-style replacements ─────────────────────── */
+
+.card-note {
+  font-size: 12px;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.budget-table-section { margin-top: 28px; }
+.budget-table-section > h3 { margin-bottom: 14px; }
+
+.td-amount {
+  color: #e8c96a;
+  font-family: 'DM Mono';
+  font-size: 12px;
+}
+
+.tr-total { background: var(--bg3); }
+.tname-total { color: #e8c96a; font-size: 13px; }
+
+.td-total-value {
+  font-family: 'Bebas Neue';
+  font-size: 20px;
+  color: var(--gold2);
+}
+
+.td-label-dim { font-size: 11px; color: var(--text-dim); }
+
+.td-annual-value {
+  font-family: 'DM Mono';
+  font-size: 12px;
+  color: var(--gold);
+}
+
+.text-gold2      { color: var(--gold2); }
+.text-red2       { color: var(--red2); }
+.red-highlight   { color: var(--red2); font-weight: 700; }
+.green-highlight { color: var(--cat-green); font-weight: 700; }
+
+/* DBS Consultant Section */
+.dbs-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 28px;
+  align-items: center;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-left: 3px solid #e60028;
+  padding: 24px;
+  margin-bottom: 28px;
+}
+
+.dbs-logo-wrap {
+  background: #000;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  min-height: 90px;
+  border-right: 1px solid #1a0a0a;
+}
+
+.dbs-logo-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+}
+
+.dbs-eyebrow {
+  font-family: 'DM Mono';
+  font-size: 9px;
+  color: #e60028;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 6px;
+}
+
+.dbs-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 4px;
+}
+
+.dbs-desc {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+}
+
+.dbs-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ptag-dbs {
+  background: rgba(230, 0, 40, 0.1);
+  color: #e60028;
+  border: 1px solid rgba(230, 0, 40, 0.25);
+}
+
+.dbs-scope-note {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-left: 3px solid #e60028;
+  padding: 18px 22px;
+  margin-bottom: 28px;
+  font-size: 12px;
+  color: var(--text);
+  line-height: 1.9;
+}
+
+.dbs-scope-label {
+  font-family: 'DM Mono';
+  font-size: 9px;
+  color: #e60028;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.dbs-table-heading {
+  margin-bottom: 10px;
+  font-family: 'DM Mono';
+  font-size: 9px;
+  color: #e60028;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.th-phase      { width: 130px; }
+.th-timing-col { width: 110px; }
+.th-format     { width:  90px; }
+.th-priority   { width: 100px; }
+
+.phase-sub {
+  font-size: 10px;
+  color: var(--text-dim);
+  font-weight: 400;
+}
+
+.td-timing {
+  font-family: 'DM Mono';
+  font-size: 11px;
+  color: var(--gold);
+}
+
+.td-content { font-size: 12px; }
+
+.dbs-scope-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.dbs-scope-in {
+  background: var(--bg2);
+  border: 1px solid rgba(230, 0, 40, 0.25);
+  padding: 18px;
+}
+
+.dbs-scope-out {
+  background: var(--bg2);
+  border: 1px solid rgba(192, 39, 45, 0.2);
+  padding: 18px;
+}
+
+.dbs-scope-title {
+  font-family: 'DM Mono';
+  font-size: 9px;
+  color: #e60028;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 10px;
+}
+
+.dbs-scope-title-out {
+  font-family: 'DM Mono';
+  font-size: 9px;
+  color: var(--red2);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 10px;
+}
+
+.dbs-scope-list {
+  padding-left: 14px;
+  font-size: 12px;
+  color: var(--text);
+  line-height: 2;
+}
+
+.notice-mt { margin-top: 20px; }
