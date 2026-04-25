@@ -3,1276 +3,617 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>APEX — AI Portfolio & Exchange System · Project Blueprint v2.0</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="src/apex_styles.css">
+<meta name="robots" content="noindex, nofollow">
+<title>Apex Quantitative Investing Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="glass-bg">
-  <span class="glass-blob glass-blob-1"></span>
-  <span class="glass-blob glass-blob-2"></span>
-  <span class="glass-blob glass-blob-3"></span>
-  <span class="glass-blob glass-blob-4"></span>
-</div>
-<div class="wrap">
 
-<!-- HEADER -->
-<header>
-  <div class="glass-nav">
-    <div class="nav-left">
-      <span class="nav-logo">APEX</span>
-    </div>
-    <div class="nav-links">
-      <a href="#objectives">Objectives</a>
-      <a href="#allocation">Allocation</a>
-      <a href="#datasources">Sources</a>
-      <a href="#models">Models</a>
-    </div>
+<div class="announce">
+  <div class="left">
+    <span>Apex Project</span>
+    <span>v1.8</span>
+    <span>R&amp;D Phase</span>
   </div>
-  <div class="tag">Project Blueprint v2.0 · Execution-Ready</div>
-  <h1><span>APEX</span><br>Project Blueprint</h1>
-  <div class="glass-mass">
-    <p class="subtitle">AI Portfolio &amp; Exchange System · US Stocks · US Funds · Commodities</p>
-    <div class="meta-row">
-      <div class="meta-item">
-        <span class="meta-label">Duration</span><span class="meta-value">12 Months R&amp;D</span>
+  <div class="right">
+    <span>25 April 2026</span>
+    <span>Private &amp; Confidential</span>
+  </div>
+</div>
+
+<nav class="top">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <div class="mark">A</div>
+      <div class="name">
+        <span class="top">Apex Quantitative</span>
+        <span class="sub">Investing Project</span>
       </div>
-      <div class="meta-item">
-        <span class="meta-label">Starting Capital</span><span class="meta-value">฿500,000</span>
+    </a>
+    <ul>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#sources">Data Sources</a></li>
+      <li><a href="#objective">Objective</a></li>
+      <li><a href="#workflow">Workflow</a></li>
+      <li><a href="#expense">Expense</a></li>
+      <li><a href="#consultant">Consultant</a></li>
+    </ul>
+    <a href="#expense" class="cta">View Budget</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">
+        Project Brief
+        <span class="gold-tag">Startup</span>
       </div>
-      <div class="meta-item">
-        <span class="meta-label">Annual Budget</span><span class="meta-value">฿120K–150K</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Team Size</span><span class="meta-value">2–4 People</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Strategy</span><span class="meta-value">Aggressive</span>
-      </div>
-      <div class="meta-item">
-        <span class="meta-label">Markets</span><span class="meta-value">US Stocks · Funds · Commodities</span>
+      <h1>Disciplined returns through <span class="serif">quantitative</span> rigour and multi-model AI consensus.</h1>
+      <p class="lede">A proprietary research and development programme designed to build, validate, and deploy an aggressive but institutionally-governed investment engine across US equities, funds, and commodities &mdash; purpose-built for a focused team of 2&ndash;4 people.</p>
+      <div class="pills">
+        <span class="pill"><b>Markets</b>US Stock &middot; Fund &middot; Mutual Fund &middot; Commodities</span>
+        <span class="pill"><b>Strategy</b>Aggressive Investor</span>
+        <span class="pill"><b>Execution</b>Long &middot; Short &middot; Leverage &middot; No margin &middot; No derivatives</span>
+        <span class="pill"><b>Team</b>2&ndash;4 people</span>
       </div>
     </div>
+
+    <aside class="hero-card">
+      <div class="hc-label">Project Summary</div>
+      <h3>At a glance.</h3>
+      <div class="summary-grid">
+        <div class="cell"><div class="k">Capital &middot; Year 1</div><div class="v">250,000<span class="u">THB</span></div></div>
+        <div class="cell"><div class="k">Annual R&amp;D Budget</div><div class="v">250,000<span class="u">THB</span></div></div>
+        <div class="cell"><div class="k">Pre-Launch</div><div class="v">6&ndash;12<span class="u">months</span></div></div>
+        <div class="cell"><div class="k">Allocation</div><div class="v">70 / 30<span class="u">LT / ST</span></div></div>
+      </div>
+    </aside>
   </div>
 </header>
 
-<!-- 01 — INVESTMENT OBJECTIVES & BENCHMARKS -->
-<section id="objectives">
-  <div class="section-label">01 — Investment Objectives &amp; Benchmarks</div>
-  <div class="bento-grid">
-    <div class="bento-card bento-4 bento-accent" data-num="A">
-      <h3>Long-Term Portfolio</h3>
-      <p class="card-desc">Annual and quarterly rebalancing using quantitative analysis and AI consensus to maximize risk-adjusted returns over extended holding periods. Focus on fundamental strength, valuation discipline, and macro trends.</p>
-      <div class="pipe-tags">
-        <span class="ptag ptag-blue">Quarterly Rebalance</span>
-        <span class="ptag ptag-gold">Target: +17.5% p.a.</span>
-        <span class="ptag ptag-yellow">Low Turnover</span>
-      </div>
-    </div>
-    <div class="bento-card bento-2 bento-hero-purple bento-center">
-      <div class="bento-stat bench-long">17.5%+</div>
-      <div class="bento-stat-label">Long-Term Portfolio<br>Annual Return Target</div>
-      <p class="bento-stat-note">vs S&amp;P 500 ~10% p.a. — requires ~7.5pp consistent alpha.</p>
-    </div>
-    <div class="bento-card bento-2 bento-hero-red bento-center">
-      <div class="bento-stat bench-short">25%+</div>
-      <div class="bento-stat-label">Short-Term Portfolio<br>Annual Return Target</div>
-      <p class="bento-stat-note">High-volatility targeting. Strict drawdown control required year over year.</p>
-    </div>
-    <div class="bento-card bento-4 bento-red" data-num="B">
-      <h3>Short-Term Portfolio</h3>
-      <p class="card-desc">Weekly and monthly rebalancing targeting high-volatility opportunities. AI-driven momentum, mean-reversion, and event-driven signals to capture price swings over short horizons.</p>
-      <div class="pipe-tags">
-        <span class="ptag ptag-blue">Weekly Rebalance</span>
-        <span class="ptag ptag-gold">Target: +25% p.a.</span>
-        <span class="ptag ptag-yellow">High Turnover</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 02 — CAPITAL ALLOCATION & POSITION SIZING -->
-<section id="allocation">
-  <div class="section-label">02 — Capital Allocation &amp; Position Sizing</div>
-  <div class="bento-grid">
-    <div class="bento-card bento-2 bento-row-2 bento-gold bento-hero-gold" data-num="฿">
-      <h3>Starting Capital</h3>
-      <p class="currency-large">฿500,000</p>
-      <p class="text-regular">Total capital deployed to live trading at Month 9, after paper trading validation. Lean starting position intentional for first-year R&amp;D phase.</p>
-    </div>
-    <div class="bento-card bento-4 bento-gold" data-num="%">
-      <h3>Portfolio Split — 70 / 30</h3>
-      <p class="allocation-text"><strong class="allocation-highlight">Long-Term: ฿350,000 (70%)</strong></p>
-      <p class="allocation-text"><strong class="allocation-short">Short-Term: ฿150,000 (30%)</strong></p>
-      <p class="text-small">Balanced allocation tilted toward long-term during Year 1 while system is validated, aligned with DBS macro accumulation thesis.</p>
-    </div>
-    <div class="bento-card bento-4 bento-gold" data-num="→">
-      <h3>Deployment Pace</h3>
-      <p class="text-bright">Full deployment at Month 9</p>
-      <p class="text-regular">Entire ฿500K deployed in single event at Month 9 once paper trading gate passes. Requires strong paper trading results; DBS Phase 3 consultation serves as the final sanity check before commitment.</p>
-    </div>
-  </div>
-
-  <div class="rule-box">
-    <h4>📐 Position Sizing Rule</h4>
-    <p><strong class="text-highlight">Maximum 5 concentrated positions per portfolio at any time.</strong> Equal-weighted by default (~20% of portfolio per position), adjustable by AI model conviction scores. This is an aggressive, concentration-based approach consistent with the stated aggressive strategy.</p>
-    <ul>
-      <li><strong>Long-Term Portfolio:</strong> 5 positions × ~฿70,000 each (฿350,000 total)</li>
-      <li><strong>Short-Term Portfolio:</strong> 5 positions × ~฿30,000 each (฿150,000 total)</li>
-      <li><strong>Risk note:</strong> Concentrated sizing means a single bad pick can cost ~20% of the portfolio. This is accepted as part of the aggressive-strategy trade-off.</li>
-    </ul>
-  </div>
-
-  <div class="rule-box">
-    <h4>💱 FX Conversion Strategy</h4>
-    <p><strong class="text-highlight">Lump sum conversion at Month 9.</strong> Full ฿500,000 converted to USD in a single transaction immediately before live deployment.</p>
-    <ul>
-      <li>Owner monitors THB/USD exchange rate in the weeks leading up to Month 9 to execute conversion at a favorable rate</li>
-      <li>DBS Phase 1 consultation in Month 1 includes FX strategy advice for optimal timing and method</li>
-      <li>Future profit-taking conversions (USD → THB) are handled ad hoc as needed</li>
-      <li>Target: keep FX slippage below 1% (equivalent to ~฿5,000 cost)</li>
-    </ul>
-  </div>
-</section>
-
-<!-- 03 — SYSTEM ARCHITECTURE & PIPELINE -->
-<section>
-  <div class="section-label">03 — System Architecture &amp; Pipeline</div>
-  <div class="pipeline">
-
-    <div class="pipe-step">
-      <div class="pipe-num">01</div>
+<section class="light" id="introduction">
+  <div class="inner">
+    <div class="sec-header">
       <div>
-        <div class="pipe-title">Data Ingestion Layer</div>
-        <div class="pipe-desc">Auto-import raw financial data, economic indicators, trends, geopolitical events, and news from 10 external APIs into a central raw data store (TimescaleDB).</div>
-        <div class="pipe-tags">
-          <span class="ptag ptag-blue">Polygon.io ★</span>
-          <span class="ptag ptag-blue">Alpha Vantage ★</span>
-          <span class="ptag ptag-blue">Nasdaq Data Link ★</span>
-          <span class="ptag ptag-blue">GNews ★</span>
-          <span class="ptag ptag-red">xAI Grok ⚡★</span>
-          <span class="ptag ptag-blue">FRED</span>
-          <span class="ptag ptag-blue">yfinance</span>
-          <span class="ptag ptag-blue">SEC EDGAR</span>
-          <span class="ptag ptag-blue">GDELT</span>
-          <span class="ptag ptag-blue">CNN Fear &amp; Greed</span>
+        <div class="sec-eyebrow"><span class="num">I.</span> Introduction</div>
+        <h2 class="sec-title">Project <span class="serif">brief.</span></h2>
+      </div>
+      <p class="sec-intro">The Apex Quantitative Investing Project is an internal research initiative combining quantitative analysis, multi-model AI consensus, and disciplined capital allocation. It is a startup-scale programme run by a team of 2&ndash;4 people. The pre-launch build window is 6&ndash;12 months; during this period the framework is developed, validated, and stress-tested before any operational deployment.</p>
+    </div>
+
+    <div class="intro-two reveal">
+      <h2>Governed by <span class="serif">consensus.</span><br/>Executed with <span class="serif">discipline.</span></h2>
+      <div>
+        <p>The project operates across two distinct portfolios &mdash; one mandated for long-horizon compounding, the other for short-horizon tactical capture. Every decision passes through a multi-stage pipeline in which data is cross-validated, knowledge is structured, quantitative models are run in parallel, and outputs are reconciled before any recommendation reaches the owner.</p>
+        <p>The mandate permits <b style="color:var(--red)">long-buying</b>, <b style="color:var(--red)">short-buying</b> (short positions), and <b style="color:var(--red)">leverage</b> (e.g. leveraged or inverse ETFs), all executed as normal cash-settled transactions. <b style="color:var(--red)">Margin financing on the broker side and direct derivative contracts (options, futures, swaps) are excluded.</b></p>
+      </div>
+    </div>
+
+    <div class="facts-grid reveal">
+      <div class="fact"><div class="f-label">Project Name</div><div class="f-value" style="font-size:20px">Apex Quantitative<br/>Investing Project</div><div class="f-desc">Internal R&amp;D programme</div></div>
+      <div class="fact"><div class="f-label">Capital &middot; Year 1</div><div class="f-value">THB 250,000</div><div class="f-desc">70% long-term &middot; 30% short-term</div></div>
+      <div class="fact"><div class="f-label">Annual R&amp;D Budget</div><div class="f-value">THB 250,000</div><div class="f-desc">Data APIs, AI models, infrastructure, research</div></div>
+      <div class="fact"><div class="f-label">Pre-Launch Duration</div><div class="f-value">6 &ndash; 12 <span class="unit">months</span></div><div class="f-desc">Build, validate, and stress-test before deployment</div></div>
+      <div class="fact"><div class="f-label">Strategy Profile</div><div class="f-value" style="font-size:24px">Aggressive Investor</div><div class="f-desc">High-conviction, concentrated positions</div></div>
+      <div class="fact"><div class="f-label">Markets</div><div class="f-value" style="font-size:20px">US Multi-Asset</div><div class="f-desc">Stocks &middot; ETFs (incl. leveraged &amp; inverse) &middot; Mutual Funds &middot; Commodities</div></div>
+      <div class="fact"><div class="f-label">Execution Style</div><div class="f-value" style="font-size:18px">Long &middot; Short<br/>Leverage</div><div class="f-desc">Long-buying &middot; Short-buying &middot; Leverage instruments &middot; Normal cash transactions &middot; No margin &middot; No derivatives</div></div>
+      <div class="fact"><div class="f-label">Team Size</div><div class="f-value" style="font-size:26px">2 &ndash; 4 people</div><div class="f-desc">Startup operation, not yet enterprise-scaled</div></div>
+    </div>
+
+    <div class="rules-strip">
+      <div class="rule">
+        <div class="rl-head">Portfolio <span class="pt">construction rule.</span></div>
+        <p>Each portfolio holds <b>&le; 8 distinct instruments</b>. Overlap <b>is permitted</b> between the long-term and short-term portfolios where the same instrument suits both mandates. Weights are not fixed &mdash; they are solved at each rebalance for the highest expected return at the minimum achievable risk, within the aggressive-investor risk budget.</p>
+      </div>
+      <div class="rule">
+        <div class="rl-head">Instrument <span class="pt">selection rule.</span></div>
+        <p>Specific instruments are <b>not</b> pre-selected in this document. Candidate universes will be generated by the quantitative engine and presented to the owner at each rebalance. Final selections are made at that point &mdash; never in advance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light" id="sources">
+  <div class="inner">
+    <div class="sec-header">
+      <div>
+        <div class="sec-eyebrow"><span class="num">I &middot; cont.</span> Data Sources</div>
+        <h2 class="sec-title">10&ndash;15 <span class="serif">curated</span> sources.</h2>
+      </div>
+      <p class="sec-intro">The raw data layer for Step 1 of the system workflow. 13 sources total &mdash; 8 primarily for the long-term portfolio, 7 primarily for the short-term portfolio (including 2 explicitly shared across both books). Every link below points to the official subscription or access page.</p>
+    </div>
+
+    <div class="src-wrap">
+      <div class="src-group-title">Long-Term Portfolio Sources<span class="gcount">8 sources &middot; fundamentals, macro, secular trends</span></div>
+      <div class="src-grid reveal">
+        <div class="src-card"><div class="src-head"><div class="sn">Financial Modeling Prep</div><div class="st">Premium</div></div><div class="su">30+ years of fundamentals, SEC filings, institutional ownership (13F), analyst grades</div><a class="s-link" href="https://site.financialmodelingprep.com/developer/docs/pricing" target="_blank" rel="noopener">Subscribe <span class="arrow">&rarr;</span></a></div>
+        <div class="src-card"><div class="src-head"><div class="sn">FRED API</div><div class="st free">Official &middot; Free</div></div><div class="su">Federal Reserve Economic Data &mdash; rates, inflation, employment, macro indicators</div><a class="s-link" href="https://fred.stlouisfed.org/docs/api/api_key.html" target="_blank" rel="noopener">Get API key <span class="arrow">&rarr;</span></a></div>
+        <div class="src-card"><div class="src-head"><div class="sn">SEC EDGAR API</div><div class="st free">Official &middot; Free</div></div><div class="su">Primary-source filings: 10-K, 10-Q, 8-K, proxy statements, insider transactions</div><a class="s-link" href="https://www.sec.gov/search-filings/edgar-application-programming-interfaces" target="_blank" rel="noopener">Access EDGAR <span class="arrow">&rarr;</span></a></div>
+        <div class="src-card"><div class="src-head"><div class="sn">World Bank Data API</div><div class="st free">Official &middot; Free</div></div><div class="su">Sovereign macro, global economic indicators, cross-country comparables</div><a class="s-link" href="https://datahelpdesk.worldbank.org/knowledgebase/topics/125589-developer-information" target="_blank" rel="noopener">API docs <span class="arrow">&rarr;</span></a></div>
+        <div class="src-card"><div class="src-head"><div class="sn">Nasdaq Data Link</div><div class="st">Premium</div></div><div class="su">Alternative data, commodities, macro datasets (formerly Quandl)</div><a class="s-link" href="https://data.nasdaq.com/sign-up" target="_blank" rel="noopener">Subscribe <span class="arrow">&rarr;</span></a></div>
+        <div class="src-card"><div class="src-head"><div class="sn">Yahoo Finance (yfinance)</div><div class="st free">Free Library</div></div><div class="su">Mutual fund and ETF coverage, global equities, earnings calendars &mdash; open-source Python library</div><a class="s-link" href="https://github.com/ranaroussi/yfinance" target="_blank" rel="noopener">View library <span class="arrow">&rarr;</span></a></div>
+        <div class="src-card"><div class="src-head"><div class="sn">GDELT Project</div><div class="st free">Official &middot; Free</div></div><div class="su">Global geopolitical event detection, news sentiment at macro scale</div><a class="s-link" href="https://www.gdeltproject.org/data.html" target="_blank" rel="noopener">Access data <span class="arrow">&rarr;</span></a></div>
+        <div class="src-card"><div class="src-head"><div class="sn">Reuters News (via Finnhub)</div><div class="st shared">Shared</div></div><div class="su">Tier-1 business and geopolitics newswire &mdash; shared with short-term portfolio</div><a class="s-link" href="https://finnhub.io/pricing" target="_blank" rel="noopener">Subscribe <span class="arrow">&rarr;</span></a></div>
+      </div>
+
+      <div class="src-group-title">Short-Term Portfolio Sources<span class="gcount">7 sources &middot; real-time price, momentum, sentiment</span></div>
+      <div class="src-grid reveal">
+        <div class="src-card"><div class="src-head"><div class="sn">Polygon.io</div><div class="st">Premium</div></div><div class="su">Tick-level real-time US equities and options, WebSocket streaming</div><a class="s-link" href="https://polygon.io/pricing" target="_blank" rel="noopener">Subscribe <span class="arrow">&rarr;</span></a></div>
+        <div class="src-card"><div class="src-head"><div class="sn">Alpha Vantage</div><div class="st">Premium</div></div><div class="su">Real-time quotes, 50+ technical indicators, native MCP server for AI agents</div><a class="s-link" href="https://www.alphavantage.co/premium/" target="_blank" rel="noopener">Subscribe <span class="arrow">&rarr;</span></a></div>
+        <div class="src-card"><div class="src-head"><div class="sn">Finnhub</div><div class="st shared">Shared</div></div><div class="su">Real-time prices, earnings transcripts, sentiment, Reuters news &mdash; shared with long-term</div><a class="s-link" href="https://finnhub.io/pricing" target="_blank" rel="noopener">Subscribe <span class="arrow">&rarr;</span></a></div>
+        <div class="src-card"><div class="src-head"><div class="sn">xAI Grok API</div><div class="st">Low-cost</div></div><div class="su">Real-time X / news sentiment, breaking-signal detection for short-term swings</div><a class="s-link" href="https://x.ai/api" target="_blank" rel="noopener">Subscribe <span class="arrow">&rarr;</span></a></div>
+        <div class="src-card"><div class="src-head"><div class="sn">Benzinga News API</div><div class="st">Premium</div></div><div class="su">Real-time news, squawk, options flow &mdash; high-quality short-term signal</div><a class="s-link" href="https://www.benzinga.com/apis/" target="_blank" rel="noopener">Subscribe <span class="arrow">&rarr;</span></a></div>
+        <div class="src-card"><div class="src-head"><div class="sn">Tiingo</div><div class="st">Low-cost</div></div><div class="su">Clean intraday equity data, crypto, IEX end-of-day backup feed</div><a class="s-link" href="https://www.tiingo.com/pricing" target="_blank" rel="noopener">Subscribe <span class="arrow">&rarr;</span></a></div>
+        <div class="src-card"><div class="src-head"><div class="sn">GDELT Project</div><div class="st shared">Shared</div></div><div class="su">Geopolitical event detection &mdash; shared with long-term portfolio</div><a class="s-link" href="https://www.gdeltproject.org/data.html" target="_blank" rel="noopener">Access data <span class="arrow">&rarr;</span></a></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="light" id="objective">
+  <div class="inner">
+    <div class="sec-header">
+      <div>
+        <div class="sec-eyebrow"><span class="num">II.</span> Objective</div>
+        <h2 class="sec-title">Two portfolios.<br/>One <span class="serif">engine.</span></h2>
+      </div>
+      <p class="sec-intro">Capital is divided across two mandates with distinct horizons, rebalance cadences, and return targets. Both portfolios are served by the same central intelligence pipeline, ensuring consistency of data, governance, and decision-making standards. Overlap between portfolios is allowed where the same instrument suits both objectives.</p>
+    </div>
+
+    <div class="portfolios reveal">
+      <div class="pf a">
+        <div class="pf-bar"></div>
+        <div class="pf-body">
+          <div class="pf-eyebrow">Portfolio A</div>
+          <h3>Long-Term</h3>
+          <div class="pf-sub">the patient compound</div>
+          <p class="pf-desc">Annual and quarterly rebalancing using quantitative analysis and AI to maximise risk-adjusted returns over extended holding periods. The portfolio concentrates on instruments demonstrating fundamental strength and alignment with durable macro trends.</p>
+          <div class="pf-metrics">
+            <div class="m"><div class="ml">Capital Share</div><div class="mv">70<span class="x">%</span></div></div>
+            <div class="m"><div class="ml">Target Return</div><div class="mv">&gt; 20<span class="x">% p.a.</span></div></div>
+            <div class="m"><div class="ml">Allocation</div><div class="mv sm">THB 175,000</div></div>
+            <div class="m"><div class="ml">Rebalance</div><div class="mv sm">Quarterly / Annual</div></div>
+            <div class="m"><div class="ml">Instruments</div><div class="mv">&le; 8</div></div>
+            <div class="m"><div class="ml">Execution</div><div class="mv sm">Long &middot; Short &middot; Leverage</div></div>
+          </div>
         </div>
       </div>
-      <div class="pipe-mode">⚙ AUTO 24/7</div>
-    </div>
 
-    <div class="pipe-step">
-      <div class="pipe-num">02</div>
-      <div>
-        <div class="pipe-title">Validation &amp; Fake-News Filter</div>
-        <div class="pipe-desc">Raw data is cross-validated by Claude (Anthropic) and Gemini (Google). Each model independently scores credibility and flags contradictions. When both agree, data proceeds. When they disagree, the data's significance score determines routing: significant data escalates to human review, routine data is auto-discarded.</div>
-        <div class="pipe-tags">
-          <span class="ptag ptag-purple">Claude API</span>
-          <span class="ptag ptag-purple">Gemini API</span>
-          <span class="ptag ptag-yellow">Credibility Scoring</span>
-          <span class="ptag ptag-yellow">Significance-Based Routing</span>
+      <div class="pf b">
+        <div class="pf-bar"></div>
+        <div class="pf-body">
+          <div class="pf-eyebrow">Portfolio B</div>
+          <h3>Short-Term</h3>
+          <div class="pf-sub">the tactical hunter</div>
+          <p class="pf-desc">Weekly and monthly rebalancing targeting high-volatility assets. AI-driven momentum and mean-reversion signals capture price swings and short-term opportunities with dynamic position sizing within the aggressive mandate.</p>
+          <div class="pf-metrics">
+            <div class="m"><div class="ml">Capital Share</div><div class="mv">30<span class="x">%</span></div></div>
+            <div class="m"><div class="ml">Target Return</div><div class="mv">&gt; 30<span class="x">% p.a.</span></div></div>
+            <div class="m"><div class="ml">Allocation</div><div class="mv sm">THB 75,000</div></div>
+            <div class="m"><div class="ml">Rebalance</div><div class="mv sm">Weekly / Monthly</div></div>
+            <div class="m"><div class="ml">Instruments</div><div class="mv">&le; 8</div></div>
+            <div class="m"><div class="ml">Execution</div><div class="mv sm">Long &middot; Short &middot; Leverage</div></div>
+          </div>
         </div>
       </div>
-      <div class="pipe-mode">⚙ AUTO 24/7</div>
     </div>
 
-    <div class="pipe-step">
-      <div class="pipe-num">03</div>
+    <div class="notice reveal">
+      <div class="icon">&sect;</div>
       <div>
-        <div class="pipe-title">2nd Brain — Knowledge Database</div>
-        <div class="pipe-desc">Validated data is categorized, tagged, and stored in a structured knowledge base. Claude API discovers relationships between events, sectors, assets, and macroeconomic indicators. Primary tool: Notion (team-friendly, API-accessible). Optional future migration to Neo4j for graph-based relationship mapping if complexity grows.</div>
-        <div class="pipe-tags">
-          <span class="ptag ptag-purple">Claude API</span>
-          <span class="ptag ptag-blue">Notion (Primary)</span>
-          <span class="ptag ptag-yellow">Entity Tagging</span>
-          <span class="ptag ptag-yellow">Relationship Mapping</span>
-        </div>
+        <h4>Instruments to be determined by the engine.</h4>
+        <p>In line with the mandate, <b>no specific equities, funds, mutual funds, or commodities have been pre-selected</b> for either portfolio. Candidate lists will be produced by the quantitative analysis engine, cross-validated by the dual-AI consensus, and presented to the owner for approval at each rebalance cycle. <b>Overlap between the two portfolios is permitted</b> where the same instrument satisfies both mandates' selection criteria. Trades are executed as <b>normal cash-settled transactions</b> &mdash; covering long-buying, short-buying, and leverage instruments. Margin financing and direct derivatives remain excluded.</p>
       </div>
-      <div class="pipe-mode">⚙ AUTO 24/7</div>
     </div>
+  </div>
+</section>
 
-    <div class="pipe-step">
-      <div class="pipe-num">04</div>
+<section id="workflow">
+  <div class="inner">
+    <div class="sec-header">
       <div>
-        <div class="pipe-title">Quantitative Analysis Engine</div>
-        <div class="pipe-desc">Claude API runs 15 models across two portfolios — 7 models for long-term and 8 models for short-term. Every model has equal voting rights. A signal is triggered when ≥75% of models agree (≥6/7 long-term, ≥6/8 short-term). Results are aggregated by confidence tier. See Section 05 for full model details.</div>
-        <div class="pipe-tags">
-          <span class="ptag ptag-purple">Claude API</span>
-          <span class="ptag ptag-blue">7 Long-Term Models</span>
-          <span class="ptag ptag-blue">8 Short-Term Models</span>
-          <span class="ptag ptag-gold">All Models Vote Equally</span>
-          <span class="ptag ptag-yellow">≥75% Consensus Required</span>
-        </div>
+        <div class="sec-eyebrow"><span class="num">III.</span> System Workflow</div>
+        <h2 class="sec-title">Six steps. Four <span class="serif">automated.</span></h2>
       </div>
-      <div class="pipe-mode">⚡ SEMI-AUTO</div>
+      <p class="sec-intro">Steps 1 through 4 run autonomously, twenty-four hours a day. Steps 5 and 6 require owner interaction. Every output &mdash; successful or otherwise &mdash; is written back to the knowledge base as training data, ensuring the system improves with each cycle.</p>
     </div>
 
-    <div class="pipe-step">
-      <div class="pipe-num">05</div>
+    <div class="phase-header">
       <div>
-        <div class="pipe-title">Owner ↔ AI Discussion</div>
-        <div class="pipe-desc">Structured discussion framework combining scheduled weekly reviews with ad-hoc triggered sessions for high-impact decisions. Tiered documentation based on decision significance. Disagreements resolved via context re-run rather than veto. See Section 08 for full framework.</div>
-        <div class="pipe-tags">
-          <span class="ptag ptag-purple">Claude Chat Interface</span>
-          <span class="ptag ptag-yellow">Weekly Scheduled + Ad-hoc</span>
-          <span class="ptag ptag-yellow">Tiered Documentation</span>
-        </div>
+        <div class="ph">Phase A &middot; Automated (Steps 1 &ndash; 4)</div>
+        <p><b>24/7 autonomous operation.</b> Data is ingested, cross-validated, stored, and analysed by the quantitative engine without human intervention.</p>
       </div>
-      <div class="pipe-mode">👤 MANUAL</div>
-    </div>
-
-    <div class="pipe-step">
-      <div class="pipe-num">06</div>
       <div>
-        <div class="pipe-title">Execution &amp; Feedback Loop</div>
-        <div class="pipe-desc">Long-term trades executed manually by owner. Short-term trades executed semi-automatically via broker API for ≥6/8 consensus signals, manual approval for lower-confidence signals. Every trade result (success or failure) is logged to the knowledge database with full context for continuous learning. See Section 07 for execution details.</div>
-        <div class="pipe-tags">
-          <span class="ptag ptag-green">Success Archive</span>
-          <span class="ptag ptag-red">Failure Analysis Log</span>
-          <span class="ptag ptag-blue">Historical Pattern DB</span>
+        <div class="ph">Phase B &middot; Owner-in-the-loop (Steps 5 &ndash; 6)</div>
+        <p><b>Owner consultation required.</b> Quantitative analysis outputs are reviewed, discussed, approved, and fed back into the system with post-trade context.</p>
+      </div>
+    </div>
+
+    <div class="flow-wrap">
+
+      <article class="step reveal">
+        <div class="step-side">
+          <div class="step-num">01 <span class="slash">/</span> <span class="total">06</span></div>
+          <div class="step-kind">Ingest</div>
+          <div class="step-auto">Auto &middot; 24/7</div>
         </div>
-      </div>
-      <div class="pipe-mode">⚡ SEMI-AUTO</div>
-    </div>
+        <div class="step-body">
+          <h3>Auto-import raw data from 10&ndash;15 external APIs.</h3>
+          <p class="desc">Continuous ingestion of financial data, economic indicators, market trends, geopolitical events, and business news into a central raw data store. 13 sources total &mdash; 8 primarily for the long-term portfolio, 7 primarily for the short-term portfolio, with 2 explicitly shared across both books. See the &ldquo;Data Sources&rdquo; section above for the full source list with subscription links.</p>
+        </div>
+      </article>
 
-  </div>
-</section>
+      <article class="step reveal">
+        <div class="step-side">
+          <div class="step-num">02 <span class="slash">/</span> <span class="total">06</span></div>
+          <div class="step-kind">Validate</div>
+          <div class="step-auto">Auto &middot; 24/7</div>
+        </div>
+        <div class="step-body">
+          <h3>Tri-model cross-validation and fake-news filter.</h3>
+          <p class="desc">Raw data is cross-validated in parallel by the latest <b>Claude (Anthropic)</b>, <b>ChatGPT GPT-5.5 (OpenAI)</b>, and <b>Gemini (Google)</b> models. Each model independently scores credibility, flags contradictions, and eliminates unreliable sources.</p>
 
-<!-- 04 — DATA SOURCES -->
-<section id="datasources">
-  <div class="section-label">04 — Data Sources</div>
-  <p class="table-note">★ = Premium Tier Required &nbsp;|&nbsp; ⚡ = Critical for Short-Term Portfolio</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Source</th><th>Type</th><th>Data Provided</th><th>Tier</th><th>Recommended Plan</th><th>Priority</th>
-      </tr>
-    </thead>
-    <tbody class="blur-tbody">
-      <tr>
-        <td class="tname">⚡★ Polygon.io</td>
-        <td>Market Data</td>
-        <td>Real-time US equities, options, forex, crypto, WebSocket streaming, full tick data</td>
-        <td class="paid-indicator">PAID</td>
-        <td class="table-desc"><strong class="price-highlight">Starter ~$29/mo</strong> — unlimited API calls, real-time data, 2yr history. Upgrade to Stocks Advanced for full options chain.</td>
-        <td class="paid-indicator">CRITICAL</td>
-      </tr>
-      <tr>
-        <td class="tname">⚡★ Nasdaq Data Link (Quandl)</td>
-        <td>Commodities / Alternative</td>
-        <td>Futures, commodities (oil, gold, wheat), institutional-grade alternative datasets</td>
-        <td class="paid-indicator">PAID</td>
-        <td class="table-desc"><strong class="price-highlight">Core Bundle ~$50/mo</strong> — unlocks commodity futures, continuous contracts, full history. Free tier too limited for commodities.</td>
-        <td class="paid-indicator">HIGH</td>
-      </tr>
-      <tr>
-        <td class="tname">⚡★ xAI Grok API</td>
-        <td>Real-Time News / AI</td>
-        <td>Live X (Twitter) firehose, breaking financial news, earnings reactions, real-time sentiment</td>
-        <td class="paid-indicator">PAID</td>
-        <td class="table-desc"><strong class="price-highlight">Usage-based ~$20–50/mo</strong> — unique real-time X and web data access. Critical for short-term signals; no other API captures live market social sentiment this fast.</td>
-        <td class="paid-indicator">CRITICAL ⚡</td>
-      </tr>
-      <tr>
-        <td class="tname">★ Alpha Vantage</td>
-        <td>Market Data</td>
-        <td>US stocks, forex, crypto, 50+ technical indicators (RSI, MACD, Bollinger), earnings calendar</td>
-        <td class="paid-indicator">PAID</td>
-        <td class="table-desc"><strong class="price-highlight">Premium ~$50/mo</strong> — removes rate limits, adds intraday extended history. Essential for technical indicator automation.</td>
-        <td class="paid-indicator">HIGH</td>
-      </tr>
-      <tr>
-        <td class="tname">★ GNews</td>
-        <td>News</td>
-        <td>Global financial and geopolitical headlines from 80,000+ sources</td>
-        <td class="paid-indicator">PAID</td>
-        <td class="table-desc"><strong class="price-highlight">~$99/mo</strong> — real-time delivery. Free alternatives delay articles by 24hrs, unsuitable for short-term signals.</td>
-        <td class="paid-indicator">HIGH</td>
-      </tr>
-      <tr>
-        <td class="tname">FRED (St. Louis Fed)</td>
-        <td>Economic</td>
-        <td>GDP, CPI inflation, interest rates, unemployment, money supply — 800,000+ series</td>
-        <td class="free-indicator">FREE</td>
-        <td class="table-desc">Unlimited free API. Best macro data source available.</td>
-        <td class="paid-indicator">HIGH</td>
-      </tr>
-      <tr>
-        <td class="tname">yfinance (Yahoo Finance)</td>
-        <td>Market Data</td>
-        <td>US stocks, ETFs, mutual funds — historical OHLCV, dividends, splits</td>
-        <td class="free-indicator">FREE</td>
-        <td class="table-desc">Free unofficial API. Best for historical backfill and backtesting. Also serves as fallback source if Polygon.io goes down.</td>
-        <td class="paid-indicator">HIGH</td>
-      </tr>
-      <tr>
-        <td class="tname">SEC EDGAR</td>
-        <td>Fundamental</td>
-        <td>10-K, 10-Q, 8-K filings, earnings, balance sheets, insider transactions</td>
-        <td class="free-indicator">FREE</td>
-        <td class="table-desc">Free government API. Essential input for DCF/DDM (L7) long-term fundamental analysis.</td>
-        <td class="paid-indicator">MEDIUM</td>
-      </tr>
-      <tr>
-        <td class="tname">GDELT Project</td>
-        <td>Geopolitical</td>
-        <td>Global event database, conflict data, sentiment index across 100+ languages</td>
-        <td class="free-indicator">FREE</td>
-        <td class="table-desc">Free, updated every 15 minutes. Best geopolitical risk data available at no cost. Important for commodity and macro signals.</td>
-        <td class="paid-indicator">MEDIUM</td>
-      </tr>
-      <tr>
-        <td class="tname">CNN Fear &amp; Greed Index</td>
-        <td>Sentiment</td>
-        <td>Composite market sentiment (7 indicators: momentum, volatility, safe haven, put/call)</td>
-        <td class="free-indicator">FREE</td>
-        <td class="table-desc">Free scrape. Useful contrarian indicator for both portfolios.</td>
-        <td class="paid-indicator">MEDIUM</td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="notice">
-    <strong>💰 Estimated Data API Budget: ~฿8,000/month (~$228 USD)</strong>
-    Paid sources total: Polygon.io $29 + Alpha Vantage $50 + GNews $99 + Nasdaq Data Link $50 ≈ $228/mo. Grok API budget (~$20–50/mo) is accounted separately under AI APIs in Section 13. FRED, yfinance, SEC EDGAR, GDELT, and CNN Fear &amp; Greed are free.
-  </div>
-</section>
+          <div class="annot">
+            <div class="annot-head">Consensus decision logic</div>
+            <ul>
+              <li><b>3 of 3 agree &rarr; VALID.</b> Data is committed to the knowledge base.</li>
+              <li><b>2 of 3 agree &rarr; PENDING.</b> Data enters a 30-minute re-check loop, repeated up to three times.</li>
+              <li><b>Loop exhausted &amp; still pending &rarr; ELIMINATE.</b></li>
+              <li><b>Fewer than 2 of 3 agree &rarr; ELIMINATE</b> immediately.</li>
+            </ul>
+            <div class="loop-viz">
+              <div class="vs"><span class="n">T+0</span><span class="t">Initial Check</span></div>
+              <div class="vs"><span class="n">T+30m</span><span class="t">Recheck 1</span></div>
+              <div class="vs"><span class="n">T+60m</span><span class="t">Recheck 2</span></div>
+              <div class="vs"><span class="n">T+90m</span><span class="t">Final Verdict</span></div>
+            </div>
+          </div>
 
-<!-- 05 — AI MODEL ARCHITECTURE -->
-<section id="models">
-  <div class="section-label">05 — AI Model Architecture &amp; Voting System</div>
+          <div class="annot">
+            <div class="annot-head">Recommended models (April 2026) &amp; anti-hallucination protocol</div>
+            <ul>
+              <li><span class="tag">Anthropic</span><b>Claude Opus 4.7</b> &mdash; highest-accuracy reasoning in the Claude 4.7 family; Sonnet 4.6 / Haiku 4.5 used for high-volume routine validation.</li>
+              <li><span class="tag">OpenAI</span><b>ChatGPT GPT-5.5</b> &mdash; natively omnimodal, 1M context window, current Artificial Analysis Intelligence Index leader (launched 23 April 2026); GPT-5.4 / GPT-5-mini routed for cheaper tasks.</li>
+              <li><span class="tag">Google</span><b>Gemini 3.1 Pro</b> &mdash; strong reasoning benchmarks, multimodal; Flash 2.5 for fast routine checks.</li>
+            </ul>
+            <p style="margin-top:14px"><b style="color:var(--white)">How to command each model for accurate validation (before cross-checking):</b></p>
+            <ul>
+              <li><span class="tag alt">1</span><b>Structured-output prompting.</b> Force JSON schema with claim, source, credibility_score (0&ndash;1), red_flags array, reasoning. No free-text answers.</li>
+              <li><span class="tag alt">2</span><b>Chain-of-Verification (CoVe).</b> The model generates verification questions about its own answer, answers them, and revises. Materially reduces hallucination.</li>
+              <li><span class="tag alt">3</span><b>Grounding only.</b> Use only the provided source text &mdash; no external memory. Any unsupported claim is flagged.</li>
+              <li><span class="tag alt">4</span><b>Self-consistency.</b> Call each model three times at temperature 0.3; take the majority vote within that model before cross-comparing.</li>
+              <li><span class="tag alt">5</span><b>Adversarial red-team prompt.</b> Ask each model to &ldquo;find reasons this source might be false or misleading.&rdquo; Only data that survives proceeds.</li>
+              <li><span class="tag alt">6</span><b>Retrieval-Augmented Generation.</b> Cross-reference claims against a vector index of previously validated facts.</li>
+              <li><span class="tag alt">7</span><b>Citation enforcement.</b> Every factual assertion must cite a source URL or document identifier; uncited claims are rejected.</li>
+              <li><span class="tag alt">8</span><b>Temperature discipline.</b> Validation calls run at 0.1&ndash;0.2; red-team calls run higher for divergence-seeking.</li>
+              <li><span class="tag gold">Cost</span><b>Use Batch API for non-urgent validation.</b> All three providers offer Batch tiers at 50% of standard price &mdash; material savings on overnight filings or end-of-day news batches.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
 
-  <div class="model-grid">
-    <div class="model-card">
-      <h4>Voting Architecture</h4>
-      <p><strong class="text-highlight">Every model has an equal right to vote.</strong> All 15 models run independently and cast directional signals (YES / NO / NEUTRAL). A recommendation is triggered when <strong class="gold-highlight">≥75% of models agree</strong> — meaning ≥6/7 for long-term and ≥6/8 for short-term. No model is supplementary; every result counts equally toward the final consensus.</p>
-    </div>
-    <div class="model-card">
-      <h4>Signal Confidence Tiers</h4>
-      <div class="signal-tiers">
-        <div class="tier-item"><span>Long-Term 7/7 or Short-Term 8/8</span><span class="ptag ptag-green">100% — STRONG SIGNAL</span></div>
-        <div class="tier-item"><span>Long-Term 6/7 or Short-Term 6–7/8</span><span class="ptag ptag-yellow">75–87% — RECOMMEND + REVIEW</span></div>
-        <div class="tier-item"><span>Below 75% consensus</span><span class="ptag ptag-red">&lt;75% — NO SIGNAL</span></div>
-      </div>
-    </div>
-  </div>
+      <article class="step reveal">
+        <div class="step-side">
+          <div class="step-num">03 <span class="slash">/</span> <span class="total">06</span></div>
+          <div class="step-kind">Memorise</div>
+          <div class="step-auto">Auto &middot; 24/7</div>
+        </div>
+        <div class="step-body">
+          <h3>The second brain &middot; knowledge database.</h3>
+          <p class="desc">Validated data is categorised, tagged, and stored in a hybrid graph-and-vector knowledge base. Claude API discovers and maintains relationships between events, sectors, assets, and macro indicators. Two parallel brains are maintained &mdash; one per portfolio &mdash; with shared cross-portfolio data available to both.</p>
 
-  <!-- LONG TERM -->
-  <div class="portfolio-header">
-    <span class="portfolio-title">A — Long-Term Portfolio · 7 Models</span>
-    <span class="ptag ptag-blue">Quarterly Rebalance</span>
-    <span class="ptag ptag-gold">≥6/7 to Trigger</span>
-  </div>
+          <div class="annot">
+            <div class="brain-cols">
+              <div class="bc"><div class="bh">Brain 1 &middot; Long-Term</div><p>Fundamentals, macro regimes, sector rotations, secular trends, valuation histories. Also receives all dual-portfolio validated data.</p></div>
+              <div class="bc"><div class="bh">Brain 2 &middot; Short-Term</div><p>Intraday flows, momentum, volatility regimes, news sentiment, options flow, geopolitical shocks. Also receives all dual-portfolio validated data.</p></div>
+            </div>
+          </div>
 
-  <div class="table-container">
-  <table class="model-table">
-    <thead>
-      <tr>
-        <th class="table-num">#</th>
-        <th class="table-model">Model</th>
-        <th class="table-category">Category</th>
-        <th>Role</th>
-        <th>Required Knowledge</th>
-        <th class="table-priority">Study Priority</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="model-num">L1</td>
-        <td class="tname">Modern Portfolio Theory (MPT)</td>
-        <td><span class="ptag ptag-gold">Allocation</span></td>
-        <td>Primary capital allocation engine. Mean-variance optimization to maximize expected return for a given risk level. Plots the efficient frontier and identifies the tangency portfolio (best Sharpe ratio).</td>
-        <td class="table-desc">Expected return &amp; variance · Covariance matrix · Efficient frontier · Sharpe ratio · numpy/scipy optimization</td>
-        <td><span class="ptag ptag-red">FIRST</span></td>
-      </tr>
-      <tr>
-        <td class="model-num">L2</td>
-        <td class="tname">Black-Litterman Model</td>
-        <td><span class="ptag ptag-gold">Allocation</span></td>
-        <td>Refines MPT by blending market equilibrium with AI-generated investor views. Eliminates extreme corner-weight problem of pure MPT. Best model for integrating AI analysis with quantitative allocation.</td>
-        <td class="table-desc">Bayesian statistics · CAPM · Reverse optimization · View &amp; confidence matrices · PyPortfolioOpt library</td>
-        <td><span class="ptag ptag-red">SECOND</span></td>
-      </tr>
-      <tr>
-        <td class="model-num">L3</td>
-        <td class="tname">Fama-French 5-Factor Model</td>
-        <td><span class="ptag ptag-blue">Screening</span></td>
-        <td>Screens equities by exposure to 5 proven return factors: market risk, size, value, profitability, investment aggressiveness. Determines which stocks enter the portfolio. Paired with L7 DCF for profit-taking decisions.</td>
-        <td class="table-desc">OLS regression · Time-series factor regression · Factor loadings · Kenneth French Data Library · statsmodels</td>
-        <td><span class="ptag ptag-yellow">THIRD</span></td>
-      </tr>
-      <tr>
-        <td class="model-num">L4</td>
-        <td class="tname">Risk Parity</td>
-        <td><span class="ptag ptag-orange">Risk</span></td>
-        <td>Allocates capital so each asset contributes equally to total portfolio risk. Prevents any single asset from dominating volatility. Cross-validates that allocation is genuinely diversified from a risk perspective.</td>
-        <td class="table-desc">Volatility &amp; covariance · Marginal risk contribution · Inverse-volatility weighting · scipy.optimize</td>
-        <td><span class="ptag ptag-yellow">THIRD</span></td>
-      </tr>
-      <tr>
-        <td class="model-num">L5</td>
-        <td class="tname">Monte Carlo Simulation</td>
-        <td><span class="ptag ptag-orange">Scenario</span></td>
-        <td>Stress-tests the portfolio allocation across 10,000+ simulated paths. Outputs VaR, drawdown estimates, and probability of meeting 17.5% p.a. benchmark. Votes YES if success probability exceeds threshold.</td>
-        <td class="table-desc">Probability distributions · NumPy random simulation · VaR &amp; CVaR · Geometric Brownian Motion</td>
-        <td><span class="ptag ptag-yellow">FOURTH</span></td>
-      </tr>
-      <tr>
-        <td class="model-num">L6</td>
-        <td class="tname">Regime Detection (HMM)</td>
-        <td><span class="ptag ptag-orange">Macro</span></td>
-        <td>Identifies current market regime (bull, bear, sideways, high-vol). Critical for macro-driven environments. Aligned with DBS "cash is king → accumulation" thesis. Triggers posture adjustments on regime transitions.</td>
-        <td class="table-desc">Hidden Markov Models · Viterbi algorithm · EM algorithm · hmmlearn · Macro indicators (VIX, yield curve)</td>
-        <td><span class="ptag ptag-green">FIFTH</span></td>
-      </tr>
-      <tr>
-        <td class="model-num">L7</td>
-        <td class="tname">DCF / Dividend Discount Model</td>
-        <td><span class="ptag ptag-blue">Valuation</span></td>
-        <td>Bottom-up intrinsic value calculator. Provides fundamental valuation anchor. <strong>Paired with L3 Fama-French to trigger profit-taking exits when an asset is overvalued by &gt;20% of intrinsic value.</strong></td>
-        <td class="table-desc">Free cash flow · WACC · Terminal value · Dividend growth model · SEC EDGAR filings reading</td>
-        <td><span class="ptag ptag-green">FIFTH</span></td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
+          <div class="annot">
+            <div class="annot-head">Startup-sized tooling for Step 3</div>
+            <ul>
+              <li><span class="tag">Core</span><b>Supabase (Postgres + pgvector)</b> &mdash; replaces both Neo4j Enterprise and Pinecone at this stage. Paid tier starts at USD 25/month. Scales to tens of millions of rows.</li>
+              <li><span class="tag">Graph</span><b>Apache AGE extension</b> for relationship queries. Upgrade path to Neo4j AuraDB if graph-traversal performance becomes a bottleneck.</li>
+              <li><span class="tag">Orchestration</span><b>LlamaIndex + LangChain</b> for RAG orchestration. Open-source.</li>
+              <li><span class="tag">Embeddings</span><b>OpenAI text-embedding-3-small</b> at $0.02/M tokens.</li>
+              <li><span class="tag">Tagging</span><b>Claude Sonnet 4.6</b> via Anthropic API as the entity-extractor and relationship-tagger.</li>
+              <li><span class="tag gold">Upgrade</span><b>When to migrate to enterprise tooling:</b> only once the KB exceeds ~10 million validated data points or query latency exceeds 2 seconds. Not expected in Year 1.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
 
-  <!-- SHORT TERM -->
-  <div class="portfolio-header">
-    <span class="portfolio-title portfolio-short">B — Short-Term Portfolio · 8 Models</span>
-    <span class="ptag ptag-blue">Weekly Rebalance</span>
-    <span class="ptag ptag-gold">≥6/8 to Trigger</span>
-  </div>
+      <article class="step reveal">
+        <div class="step-side">
+          <div class="step-num">04 <span class="slash">/</span> <span class="total">06</span></div>
+          <div class="step-kind">Analyse</div>
+          <div class="step-auto">Auto &middot; 24/7</div>
+        </div>
+        <div class="step-body">
+          <h3>Quantitative analysis engine &middot; dual-AI consensus.</h3>
+          <p class="desc">Claude API and ChatGPT GPT-5.5 API each independently run eight quantitative models per portfolio using data retrieved from the knowledge base. The outputs of the two engines are then reconciled. When both agree &rarr; <b>VALID</b>, forwarded to Step 5 as &ldquo;Final Result&rdquo;. When they disagree &rarr; <b>PENDING</b>, forwarded to Step 5 as &ldquo;Requested Discussion&rdquo;.</p>
 
-  <div class="table-container">
-  <table class="model-table">
-    <thead>
-      <tr>
-        <th class="table-num">#</th>
-        <th class="table-model">Model</th>
-        <th class="table-category">Category</th>
-        <th>Role</th>
-        <th>Required Knowledge</th>
-        <th class="table-priority">Study Priority</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="model-num">S1</td>
-        <td class="tname">Momentum Factor</td>
-        <td><span class="ptag ptag-blue">Trend</span></td>
-        <td>Systematically buys assets with strong recent price performance (1–6 month lookback). One of the most robust anomalies in US equities. Cross-validated with Grok sentiment data.</td>
-        <td class="table-desc">Rolling window returns · Cross-sectional ranking · Risk-adjusted momentum · Pandas rolling functions</td>
-        <td><span class="ptag ptag-red">FIRST</span></td>
-      </tr>
-      <tr>
-        <td class="model-num">S2</td>
-        <td class="tname">Mean-Reversion / Stat Arb</td>
-        <td><span class="ptag ptag-blue">Reversion</span></td>
-        <td>Identifies deviations from historical mean or correlated pairs and trades the reversion. Includes z-score signals and pairs trading. Complements momentum for opposite market behaviors.</td>
-        <td class="table-desc">Z-score · Cointegration (Engle-Granger, Johansen) · Half-life of mean reversion · statsmodels · ADF test</td>
-        <td><span class="ptag ptag-red">SECOND</span></td>
-      </tr>
-      <tr>
-        <td class="model-num">S3</td>
-        <td class="tname">Technical Composite (RSI+MACD+Bollinger+ATR)</td>
-        <td><span class="ptag ptag-blue">Technical</span></td>
-        <td><strong>Core execution model for short-term stops and targets.</strong> RSI for overbought/oversold, MACD for trend, Bollinger for breakouts, ATR for position sizing and trailing stop distance. All four must align for a vote.</td>
-        <td class="table-desc">RSI · MACD (EMA fast/slow/signal) · Bollinger Bands · ATR · TA-Lib or pandas-ta · Avoiding look-ahead bias</td>
-        <td><span class="ptag ptag-red">SECOND</span></td>
-      </tr>
-      <tr>
-        <td class="model-num">S4</td>
-        <td class="tname">Event-Driven Model</td>
-        <td><span class="ptag ptag-gold">Catalyst</span></td>
-        <td>Captures price reactions to scheduled events (earnings, FOMC, CPI prints) and unscheduled events (geopolitical, Grok real-time feed). Fed decisions and CPI prints especially critical given current macro environment.</td>
-        <td class="table-desc">Event study methodology · Abnormal returns · Economic calendar integration · GDELT + Grok API parsing</td>
-        <td><span class="ptag ptag-yellow">THIRD</span></td>
-      </tr>
-      <tr>
-        <td class="model-num">S5</td>
-        <td class="tname">GARCH Volatility</td>
-        <td><span class="ptag ptag-orange">Volatility</span></td>
-        <td><strong>Calibrates ATR stop distance.</strong> Forecasts time-varying volatility clusters. GARCH provides vol forecast, S3 technical composite uses it to set stop-loss distance dynamically. Tighter stops in high-vol regimes.</td>
-        <td class="table-desc">ARCH/GARCH theory · Maximum likelihood estimation · Volatility clustering · arch Python library · GARCH(1,1)</td>
-        <td><span class="ptag ptag-yellow">FOURTH</span></td>
-      </tr>
-      <tr>
-        <td class="model-num">S6</td>
-        <td class="tname">Monte Carlo Simulation</td>
-        <td><span class="ptag ptag-orange">Scenario</span></td>
-        <td>Simulates trade outcomes over 1–4 week horizons. Votes YES if probability of hitting profit target before stop-loss exceeds threshold. Also informs position sizing via Kelly Criterion.</td>
-        <td class="table-desc">Short-horizon path simulation · Kelly Criterion · Expected value calculation · Stop-loss probability</td>
-        <td><span class="ptag ptag-yellow">FOURTH</span></td>
-      </tr>
-      <tr>
-        <td class="model-num">S7</td>
-        <td class="tname">Black-Scholes Options</td>
-        <td><span class="ptag ptag-orange">Options</span></td>
-        <td>Prices options and identifies mispriced contracts using IV vs GARCH-forecasted volatility. High IV → sell premium; low IV → buy for leverage. Works in tight combination with S5 GARCH.</td>
-        <td class="table-desc">Black-Scholes formula · Greeks (Delta, Gamma, Theta, Vega) · Implied volatility · IV Rank/Percentile · mibian/py_vollib</td>
-        <td><span class="ptag ptag-green">FIFTH</span></td>
-      </tr>
-      <tr>
-        <td class="model-num">S8</td>
-        <td class="tname">Sentiment Scoring (FinBERT NLP)</td>
-        <td><span class="ptag ptag-blue">Sentiment</span></td>
-        <td>Converts text from Grok, GNews, and GDELT into quantified sentiment scores using FinBERT finance-domain model. Most time-sensitive model — reacts to breaking news within minutes via Grok real-time feed.</td>
-        <td class="table-desc">NLP basics · FinBERT (Hugging Face) · Text preprocessing · Rolling sentiment aggregation · Entity extraction</td>
-        <td><span class="ptag ptag-green">FIFTH</span></td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
+          <div class="disclaimer-pill">&#9888; Models in this list are not yet finalized &mdash; subject to further discussion and revision</div>
 
-  <!-- STUDY ROADMAP -->
-  <div class="study-roadmap">
-    <h4>📚 Model Self-Study Roadmap (for Team)</h4>
-    <p class="study-desc">All 15 models must be understood at a working level by the core team within 12 months. Priority sequence below runs in parallel with system build.</p>
-    <div class="study-grid">
-      <div class="study-phase">
-        <div class="study-month">MONTH 1–2 · FIRST</div>
-        MPT · Black-Litterman · Momentum · Mean-Reversion · Python stack (pandas, numpy, scipy)
-      </div>
-      <div class="study-phase">
-        <div class="study-month">MONTH 3–4 · SECOND</div>
-        Fama-French · Risk Parity · Technical Composite (TA-Lib) · Event-Driven methodology
-      </div>
-      <div class="study-phase">
-        <div class="study-month study-third">MONTH 5–7 · THIRD/FOURTH</div>
-        Monte Carlo · GARCH · FinBERT Sentiment · HMM Regime Detection
-      </div>
-      <div class="study-phase">
-        <div class="study-month study-fifth">MONTH 8–10 · FIFTH</div>
-        Black-Scholes + Greeks · DCF/DDM · Full-system integration &amp; backtesting
-      </div>
-    </div>
-    <div class="notice">
-      <strong>⚠ Learning Risk</strong>
-      Studying 15 models while building a production system is aggressive. Monitor team learning bandwidth closely at Month 3 and Month 6 checkpoints. Consider slowing build pace rather than skipping model understanding.
+          <div class="annot">
+            <div class="annot-head">Recommended quantitative models &middot; eight per portfolio</div>
+
+            <div class="group-head"><span class="gm">Long-Term Portfolio</span> &mdash; Models 1 to 8</div>
+            <ul>
+              <li><b>1. Black-Litterman Model.</b> Bayesian blending of market equilibrium with AI-generated views.</li>
+              <li><b>2. Fama-French 5-Factor Model.</b> Decomposes expected returns into market, size, value, profitability, and investment factors.</li>
+              <li><b>3. Mean-Variance Optimisation (with Ledoit-Wolf shrinkage).</b> Risk-adjusted weight solver.</li>
+              <li><b>4. Discounted Cash Flow (with Reverse DCF cross-check).</b> Intrinsic-value anchor for fundamental candidates.</li>
+              <li><b>5. Monte Carlo Simulation (10,000+ paths, fat-tailed).</b> Multi-year return distribution and drawdown analysis. <em>Shared with short-term.</em></li>
+              <li><b>6. Hidden Markov Model &middot; regime detection.</b> Identifies macro regimes to tilt allocation.</li>
+              <li><b>7. Hierarchical Risk Parity (L&oacute;pez de Prado).</b> Stable allocation method that does not require expected-return inputs.</li>
+              <li><b>8. LSTM / Transformer Forecast Ensemble.</b> Deep-learning price and earnings trajectory forecasts.</li>
+            </ul>
+
+            <div class="group-head"><span class="gm">Short-Term Portfolio</span> &mdash; Models 1 to 8</div>
+            <ul>
+              <li><b>1. Monte Carlo Simulation.</b> <em>Shared with long-term;</em> used here for Value-at-Risk and path-dependent scenarios.</li>
+              <li><b>2. GARCH (1,1) / EGARCH.</b> Volatility forecasting; primary driver of position sizing.</li>
+              <li><b>3. Kalman-Filter Pairs Trading.</b> Mean-reversion signal for cointegrated instruments.</li>
+              <li><b>4. Ornstein-Uhlenbeck Mean-Reversion.</b> Entry and exit timing for range-bound assets.</li>
+              <li><b>5. Cross-Sectional Momentum (Jegadeesh-Titman 12-1).</b> Ranks the candidate universe by trailing momentum.</li>
+              <li><b>6. Time-Series Momentum (Moskowitz-Ooi-Pedersen).</b> Trend-following overlay, especially effective on commodities and leveraged ETFs.</li>
+              <li><b>7. XGBoost / LightGBM Classifier.</b> Supervised signal combiner across technical and sentiment features.</li>
+              <li><b>8. Fractional Kelly Criterion (capped).</b> Optimal position sizing given edge and volatility; caps prevent catastrophic drawdowns.</li>
+            </ul>
+            <p style="margin-top:14px"><b style="color:var(--gold-bright)">Note: this list of models is not yet finalized &mdash; the team may add, remove, or replace models as the build progresses.</b></p>
+          </div>
+        </div>
+      </article>
+
+      <article class="step reveal">
+        <div class="step-side">
+          <div class="step-num">05 <span class="slash">/</span> <span class="total">06</span></div>
+          <div class="step-kind">Discuss</div>
+          <div class="step-auto">Owner-in-the-loop</div>
+        </div>
+        <div class="step-body">
+          <h3>Discussion with owner &middot; final decision gate.</h3>
+          <p class="desc">When Step 4 reports a &ldquo;<b>Final Result</b>&rdquo; (both AI engines agree), the system provides a concise briefing and requests owner permission to execute. When Step 4 reports a &ldquo;<b>Requested Discussion</b>&rdquo; (the engines disagree), the system presents the full conflict &mdash; each engine&rsquo;s reasoning, the specific point of divergence, and the data driving each view &mdash; and asks the owner for the final executive decision.</p>
+          <div class="annot">
+            <div class="annot-head">Channel &middot; LINE / WhatsApp / Gmail</div>
+            <p>The owner receives briefings through a secure web dashboard plus an encrypted notification on their preferred channel: <b>LINE</b> (primary, given Thai operating context), with <b>WhatsApp</b> and <b>Gmail</b> as fallback channels. Each briefing includes model consensus status, proposed orders, confidence scores, worst-case Value-at-Risk, and one-click approve / reject / modify controls. For a 2&ndash;4 person team, this is a lightweight Notion or Linear-style interface rather than an enterprise trading desk.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="step reveal">
+        <div class="step-side">
+          <div class="step-num">06 <span class="slash">/</span> <span class="total">06</span></div>
+          <div class="step-kind">Execute &amp; Learn</div>
+          <div class="step-auto">Owner-in-the-loop</div>
+        </div>
+        <div class="step-body">
+          <h3>Execution &amp; feedback loop.</h3>
+          <p class="desc">Upon owner approval, orders are transmitted to the execution layer (broker selection pending) as <b>normal cash-settled transactions</b> &mdash; covering long-buying, short-buying, and leverage instruments (e.g. leveraged or inverse ETFs). <b>No margin financing on the broker side and no direct derivative contracts (options, futures, swaps).</b> The full result, successful or otherwise, is written back to the knowledge database with complete context: original plan, rationale, AI consensus level, execution quality, P&amp;L, and root-cause tags on failures.</p>
+          <div class="annot">
+            <div class="annot-head">The loop never stops learning</div>
+            <p>A failed trade is not a loss &mdash; it is a labelled data point. Post-mortem analysis tags the failure type (timing, sizing, thesis, execution, external shock) and feeds it back into the Step 3 knowledge graph, so future runs of Step 4 weight similar setups accordingly.</p>
+          </div>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
 
-<!-- 06 — ENTRY, EXIT & PROFIT-TAKING RULES -->
-<section>
-  <div class="section-label">06 — Entry, Exit &amp; Profit-Taking Rules</div>
-
-  <!-- LONG TERM RULES -->
-  <div class="rules-section">
-    <div class="rules-header">
-      <span class="rules-title">Long-Term Portfolio Rules</span>
-      <span class="ptag ptag-gold">฿350K · 5 Positions Max</span>
-    </div>
-
-    <div class="rule-box">
-      <h4>🎯 Entry Criteria</h4>
-      <p>Position opened when <strong class="gold-highlight">≥6 of 7 models vote YES</strong> (≥86% consensus). High-confidence 7/7 triggers auto-recommendation; 6/7 requires owner review before execution.</p>
-      <ul>
-        <li><strong>Allocation engines (L1, L2, L4):</strong> Must agree the asset fits within portfolio risk budget</li>
-        <li><strong>Screening (L3, L7):</strong> Must show favorable factor exposure and fundamental value</li>
-        <li><strong>Macro &amp; risk (L5, L6):</strong> Must not flag extreme drawdown risk or unfavorable regime</li>
-      </ul>
-    </div>
-
-    <div class="rule-box">
-      <h4>🛑 Stop-Loss Rule (No Hard Stop)</h4>
-      <p><strong class="text-highlight">No fixed percentage stop-loss.</strong> This is the authentic long-term investment philosophy: if the thesis and fundamentals remain valid, short-term volatility is noise.</p>
-      <ul>
-        <li><strong>Trigger at –20%:</strong> Mandatory review session — team + AI models + DBS consultation</li>
-        <li><strong>Hold if thesis intact:</strong> If fundamentals and macro case still valid, hold position through drawdown</li>
-        <li><strong>Exit only if thesis is broken:</strong> Fundamental deterioration, sector collapse, or macro regime shift invalidating original investment case</li>
-        <li><strong>Discipline requirement:</strong> Reviews must be rigorous — not rationalizations for holding losing positions</li>
-      </ul>
-    </div>
-
-    <div class="rule-box">
-      <h4>💰 Profit-Taking Rule (Model-Driven)</h4>
-      <p><strong class="text-highlight">No arbitrary profit targets.</strong> Positions held indefinitely as long as fundamentals support them. Exit only when the quantitative models signal overvaluation.</p>
-      <ul>
-        <li><strong>Exit trigger:</strong> L3 Fama-French flags negative factor exposure <strong>AND</strong> L7 DCF/DDM shows asset overvalued by &gt;20% of intrinsic value</li>
-        <li><strong>Quarterly rebalancing:</strong> Reallocates new capital and replaces exited positions only. Does not force profit-taking on winning positions.</li>
-        <li><strong>Philosophy:</strong> Buy on consensus, hold on thesis, exit on valuation</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- SHORT TERM RULES -->
-  <div class="rules-section">
-    <div class="rules-header">
-      <span class="rules-title rules-short">Short-Term Portfolio Rules</span>
-      <span class="ptag ptag-red">฿150K · 5 Positions Max · ATR-Driven</span>
-    </div>
-
-    <div class="rule-box">
-      <h4>🎯 Entry Criteria</h4>
-      <p>Position opened when <strong class="red-highlight">≥6 of 8 models vote YES</strong> (≥75% consensus). Auto-execution for 6/8+ signals; below threshold queues for manual approval.</p>
-      <ul>
-        <li><strong>Trend/reversion (S1, S2):</strong> Must confirm directional edge</li>
-        <li><strong>Technical + volatility (S3, S5):</strong> Must align for entry price and ATR-based stop distance</li>
-        <li><strong>Catalyst/sentiment (S4, S8):</strong> Must not contradict trade direction</li>
-        <li><strong>Risk sizing (S6):</strong> Position sized via Kelly Criterion adjusted by simulation confidence</li>
-      </ul>
-    </div>
-
-    <div class="rule-box">
-      <h4>🛑 Stop-Loss Rule (ATR-Based Dynamic)</h4>
-      <p><strong class="text-highlight">Stop-loss set dynamically based on each asset's actual volatility,</strong> not a fixed percentage. Avoids the common flaw of stops too tight for volatile assets or too loose for stable ones.</p>
-      <ul>
-        <li><strong>Formula:</strong> Stop Price = Entry Price − (N × ATR)</li>
-        <li><strong>N multiplier:</strong> Typically 1.5–2.5, calibrated by S5 GARCH volatility forecast</li>
-        <li><strong>High GARCH vol forecast:</strong> Tighter N multiplier (protect from vol spikes)</li>
-        <li><strong>Low GARCH vol forecast:</strong> Wider N multiplier (let normal fluctuations play out)</li>
-        <li><strong>ATR source:</strong> S3 Technical Composite model already calculates ATR continuously</li>
-      </ul>
-    </div>
-
-    <div class="rule-box">
-      <h4>💰 Profit-Taking Rule (ATR Trailing Stop)</h4>
-      <p><strong class="text-highlight">Let winners run.</strong> ATR-based trailing stop follows the price up, locking in gains as trend extends. Exits triggered when trend breaks.</p>
-      <ul>
-        <li><strong>Trailing stop:</strong> As price rises, trailing stop advances at the same ATR distance</li>
-        <li><strong>Exit trigger 1:</strong> Price hits the trailing stop level (trend break)</li>
-        <li><strong>Exit trigger 2:</strong> Model consensus flips — 6+ models shift to NO or REDUCE</li>
-        <li><strong>No fixed profit target:</strong> No artificial cap at +15% or +20% — disciplined models + market volatility determine the exit</li>
-      </ul>
-    </div>
-
-    <div class="notice">
-      <strong>🔗 Model Synergy for Short-Term</strong>
-      The short-term exit system is fully integrated with the voting models. S3 Technical Composite calculates ATR, S5 GARCH forecasts volatility and calibrates the N multiplier, and S6 Monte Carlo validates the risk/reward setup. This creates a self-consistent execution framework where entry, stop-loss, and exit all flow from the same model architecture.
-    </div>
-  </div>
-</section>
-
-<!-- 07 — BROKER & EXECUTION LAYER -->
-<section>
-  <div class="section-label">07 — Broker &amp; Execution Layer</div>
-
-  <div class="bento-grid">
-    <div class="bento-card bento-2 bento-gold" data-num="LT">
-      <h3>Long-Term — Manual Execution</h3>
-      <p class="text-regular">No broker API required. Trades placed manually by owner after owner-AI discussion session.</p>
-      <ul>
-        <li>Owner reviews AI recommendation and rationale</li>
-        <li>Manual trade placement through chosen broker interface</li>
-        <li>Trade logged manually into Notion / 2nd brain database</li>
-        <li>No speed pressure — long-term trades are not time-critical</li>
-      </ul>
-    </div>
-    <div class="bento-card bento-4 bento-red" data-num="ST">
-      <h3>Short-Term — Semi-Auto via API</h3>
-      <p class="text-regular">Broker API integration required for speed. Broker selection TBD during Month 1–2 evaluation window.</p>
-      <ul>
-        <li>Auto-execute trades on ≥6/8 model consensus signals</li>
-        <li>Manual approval queue for 5/8 or borderline signals</li>
-        <li>Real-time notifications on every trade event</li>
-        <li>Owner can override or close any position at any time</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="rule-box">
-    <h4>🏦 Short-Term Broker Selection — TBD Month 1–2</h4>
-    <p>Final broker confirmed before Month 3 when paper trading begins. Evaluation criteria:</p>
-    <ul>
-      <li><strong>Thai resident account opening support</strong> — must accept Thailand-based investors</li>
-      <li><strong>API quality</strong> — robust REST and WebSocket APIs with good documentation</li>
-      <li><strong>Coverage</strong> — US equities, ETFs, options (for S7 Black-Scholes strategies)</li>
-      <li><strong>Fees</strong> — low per-trade cost, competitive FX spreads</li>
-      <li><strong>Regulatory standing</strong> — SIPC insurance or equivalent protection</li>
-      <li><strong>Top candidates:</strong> Interactive Brokers (IBKR) — strongest API, widely used by Thai algo traders; Moomoo / Futu SG — Singapore-regulated alternative; DBS Vickers — ask DBS partner at Phase 1 about algo API access</li>
-    </ul>
-  </div>
-
-  <div class="rule-box">
-    <h4>⚡ Execution Mode — Semi-Auto with Alerts</h4>
-    <p>AI places short-term trades automatically on high-confidence signals and sends immediate notifications. The ≥6/8 consensus threshold serves as the pre-execution filter.</p>
-    <ul>
-      <li><strong>≥6/8 consensus:</strong> Auto-execute, notification sent within 30 seconds</li>
-      <li><strong>5/8 consensus:</strong> Queue for manual approval, notification sent</li>
-      <li><strong>Owner override:</strong> Any active position can be closed manually at any time</li>
-      <li><strong>Configuration requirement:</strong> Notification channels must be verified real-time during setup</li>
-    </ul>
-  </div>
-
-  <div class="rule-box">
-    <h4>📢 Notification Channels — Multi-Tier</h4>
-    <p>Two-tier notification system ensures no urgent event is missed while maintaining a searchable audit trail.</p>
-    <ul>
-      <li><strong>Tier 1 — Urgent (Telegram or Line bot):</strong> Real-time push alerts for trade executions, stop-loss triggers, high-confidence signals awaiting approval. Delivery target: within 30 seconds of event.</li>
-      <li><strong>Tier 2 — Logs &amp; Reports (Email):</strong> Daily summary reports, weekly performance logs, full audit trail. Delivered at end of each trading day.</li>
-      <li><strong>Backup:</strong> All events also logged to Notion 2nd brain for historical reference</li>
-    </ul>
-  </div>
-</section>
-
-<!-- 08 — OWNER-AI DISCUSSION FRAMEWORK -->
-<section>
-  <div class="section-label">08 — Owner ↔ AI Discussion Framework</div>
-
-  <div class="rule-box">
-    <h4>🗓 Discussion Triggers (Two-Mode)</h4>
-    <p>Discussions happen in two modes: scheduled for routine review, triggered for high-impact decisions.</p>
-    <ul>
-      <li><strong>Scheduled weekly (every Friday):</strong> Aligned with team performance review. Covers portfolio health, trend analysis, model accuracy trends, strategic issues for the coming week.</li>
-      <li><strong>Triggered ad-hoc:</strong> Long-term portfolio trade entries or exits, short-term trades exceeding capital threshold (to be set during Month 2–3 setup), signals where consensus is borderline, or supplementary context flagging caution.</li>
-      <li><strong>Auto-execute without discussion:</strong> Routine short-term trades with ≥6/8 consensus below the capital threshold run on the standard auto-execution path.</li>
-    </ul>
-  </div>
-
-  <div class="rule-box">
-    <h4>📝 Tiered Documentation System</h4>
-    <p>Documentation depth scales with decision significance. All tiers stored in Notion 2nd brain and tagged for feedback-loop analysis.</p>
-    <ul>
-      <li><strong>Tier 1 — Standard (routine):</strong> Decision + 2–3 sentence rationale. Used for most short-term trades, routine rebalancing, standard signal executions.</li>
-      <li><strong>Tier 2 — Comprehensive (moderate):</strong> Decision + rationale + dissenting model views + explicit risk acknowledgment. Used for long-term trade entries/exits, above-threshold short-term trades, borderline consensus signals (6/7 or 6/8).</li>
-      <li><strong>Tier 3 — Structured Template (high-stakes):</strong> Full standardized document with investment thesis, conviction level, expected catalysts, pre-defined exit conditions, dissenting views. Used for major capital allocation decisions, responses to DBS macro shifts, any decision affecting &gt;20% of portfolio capital.</li>
-    </ul>
-  </div>
-
-  <div class="rule-box">
-    <h4>🤝 Disagreement Resolution — Re-Run With Context</h4>
-    <p><strong class="text-highlight">Disagreements are never resolved by simple veto.</strong> Instead, the owner articulates what information or perspective the AI is missing, and the AI re-runs analysis with that new context.</p>
-    <ul>
-      <li><strong>Step 1:</strong> Owner articulates missing context (recent news, industry insight, personal risk factor)</li>
-      <li><strong>Step 2:</strong> AI re-runs voting models with the new context fed in</li>
-      <li><strong>Step 3a:</strong> If re-run confirms the owner's view → trade is revised accordingly</li>
-      <li><strong>Step 3b:</strong> If re-run still supports original recommendation → escalate to DBS consultation for high-stakes cases, or log as a flagged disagreement in the feedback database for future review</li>
-      <li><strong>Benefit:</strong> Creates a continuous learning system — every disagreement either improves AI inputs or becomes a documented case study</li>
-    </ul>
-  </div>
-</section>
-
-<!-- 09 — PERFORMANCE TRACKING & DASHBOARD -->
-<section>
-  <div class="section-label">09 — Performance Tracking &amp; Dashboard</div>
-
-  <div class="rule-box">
-    <h4>🖥 Dashboard Stack — Hybrid Architecture</h4>
-    <p>Three-tool hybrid, each serving a distinct purpose. Final architecture confirmed during Month 2–3 build phase before paper trading begins.</p>
-    <ul>
-      <li><strong>Notion — Team Hub:</strong> High-level portfolio summaries, weekly performance reports, meeting notes, decision logs. Natural fit with existing 2nd brain database.</li>
-      <li><strong>Grafana — Real-Time Monitoring:</strong> Live time-series charts fed from TimescaleDB showing portfolio value, drawdown, model agreement trends. Best for technical monitoring.</li>
-      <li><strong>Streamlit — Custom Analysis:</strong> Interactive analysis tool for ad-hoc queries (e.g., "show trades where GARCH flagged high vol," "compare model accuracy by month"). Built by team, flexible.</li>
-    </ul>
-  </div>
-
-  <div class="rule-box">
-    <h4>📊 Primary Performance Metrics</h4>
-    <p>Five core metrics tell the complete performance story — measuring both outcomes and system quality.</p>
-    <ul>
-      <li><strong>Total Return vs Benchmark:</strong> Portfolio return vs 17.5% (long-term) and 25% (short-term) targets, and vs S&amp;P 500. The bottom-line answer to "is this working?"</li>
-      <li><strong>Sharpe Ratio:</strong> Risk-adjusted return. Distinguishes genuine skill from lucky volatility-induced gains.</li>
-      <li><strong>Win Rate:</strong> Percentage of trades that are profitable. Execution quality indicator.</li>
-      <li><strong>Model Accuracy:</strong> Percentage of voting signals that proved correct in hindsight. Validates whether the voting system actually predicts correctly. <strong class="red-highlight">Critical metric</strong> — also drives the stop/pivot trigger in Section 15.</li>
-      <li><strong>Trade Log:</strong> Full history with entry/exit rationale, model votes, discussion tier, and outcome. Audit trail + learning source.</li>
-    </ul>
-  </div>
-
-  <div class="rule-box">
-    <h4>📈 Secondary Metrics (Displayed but Smaller)</h4>
-    <ul>
-      <li><strong>Maximum Drawdown:</strong> Peak-to-trough decline. Critical for triggering emergency DBS consultation if a serious drawdown occurs — always displayed even though not a primary focus.</li>
-      <li><strong>Position-level P&amp;L:</strong> Gain/loss per current holding. Informs quarterly rebalancing decisions.</li>
-      <li><strong>Sector Exposure:</strong> Concentration risk across sectors and asset classes.</li>
-    </ul>
-  </div>
-
-  <div class="rule-box">
-    <h4>🗓 Review Cadence — Weekly Friday + Monthly Deep-Dive</h4>
-    <p>Weekly rhythm aligned with short-term portfolio's weekly rebalancing cycle. Friday chosen for clean end-of-week review.</p>
-    <ul>
-      <li><strong>Every Friday (after market close):</strong> Full dashboard walkthrough, short-term trade log review, model accuracy check, action items for coming week</li>
-      <li><strong>Last Friday of each month:</strong> Monthly deep-dive extends the Friday review — full trend analysis, long-term portfolio health, sector rotation assessment</li>
-      <li><strong>Dashboard itself:</strong> Updates in real-time between reviews for anyone checking mid-week</li>
-    </ul>
-  </div>
-</section>
-
-<!-- 10 — RISK MANAGEMENT & CONTROLS -->
-<section>
-  <div class="section-label">10 — Risk Management &amp; Controls</div>
-
-  <div class="risk-grid">
-    <div class="risk-section">
-      <h3>Risk Level by Component</h3>
-      <div class="risk-bar-wrap">
-        <div class="risk-row"><span class="risk-label">Short-Term Portfolio</span><div class="risk-track"><div class="risk-fill risk-high"></div></div><span class="risk-val risk-high">HIGH</span></div>
-        <div class="risk-row"><span class="risk-label">Long-Term Portfolio</span><div class="risk-track"><div class="risk-fill risk-med"></div></div><span class="risk-val risk-med">MED</span></div>
-        <div class="risk-row"><span class="risk-label">Concentration (5 pos.)</span><div class="risk-track"><div class="risk-fill risk-high"></div></div><span class="risk-val risk-high">HIGH</span></div>
-        <div class="risk-row"><span class="risk-label">Data Pipeline</span><div class="risk-track"><div class="risk-fill risk-low"></div></div><span class="risk-val risk-low">LOW</span></div>
-        <div class="risk-row"><span class="risk-label">API Dependency</span><div class="risk-track"><div class="risk-fill risk-med"></div></div><span class="risk-val risk-med">MED</span></div>
-        <div class="risk-row"><span class="risk-label">Budget Overrun</span><div class="risk-track"><div class="risk-fill risk-med"></div></div><span class="risk-val risk-med">MED</span></div>
+<section class="light" id="expense">
+  <div class="inner">
+    <div class="sec-header">
+      <div>
+        <div class="sec-eyebrow"><span class="num">IV.</span> Expense</div>
+        <h2 class="sec-title">Year-1 budget by <span class="serif">category.</span></h2>
       </div>
+      <p class="sec-intro">Startup-sized stack for a 2&ndash;4 person team, built to fit within the THB 250,000 annual R&amp;D envelope. Annual subscriptions are used wherever they save money. Claude, OpenAI, and Gemini APIs are mandatory (P0). USD &harr; THB reference rate: USD 1 &asymp; THB 34.</p>
     </div>
-    <div class="risk-section">
-      <h3>Risk Controls in Place</h3>
-      <ul class="risk-controls">
-        <li>Max 5 positions per portfolio — <strong class="text-highlight">~20% per position</strong></li>
-        <li>Long-term: Mandatory review triggered at <strong class="text-highlight">–20% drawdown</strong></li>
-        <li>Short-term: ATR-based stops via S3 + S5 models</li>
-        <li>≥75% model consensus required for any trade</li>
-        <li>Paper-trade Month 3–8 before any real capital</li>
-        <li>API fallback chains (see Section 11)</li>
-        <li>DBS external review at all 5 key project phases</li>
-        <li>Weekly team performance review + monthly deep-dive</li>
-        <li>Owner override on every trade at any time</li>
-      </ul>
-    </div>
-  </div>
 
-  <div class="notice">
-    <strong>⚠ Aggressive Strategy — Risk Acknowledgment</strong>
-    The 25%/yr short-term target is aggressive — most professional hedge funds target 15–25% and sit near the top of that range. Combined with 5-position concentrated sizing (~20% per position), a single bad pick can meaningfully damage portfolio value. These risks are accepted as conscious trade-offs for the aggressive strategy. DBS Phase 2 and Phase 3 consultations are designed as sanity checks against these elevated risks.
-  </div>
-</section>
-
-<!-- 11 — CONTINGENCY & FALLBACK PLANS -->
-<section>
-  <div class="section-label">11 — Contingency &amp; Fallback Plans</div>
-
-  <div class="rule-box">
-    <h4>🔄 AI Validation Disagreement (Claude vs Gemini)</h4>
-    <p>When the two validation models cannot agree on data credibility, routing depends on data significance.</p>
-    <ul>
-      <li><strong>Significant data flagged for manual review:</strong> Fed announcements, earnings reports, major geopolitical events, news on currently held assets</li>
-      <li><strong>Significance scoring layer:</strong> Auto-classifies each disagreement. High significance → human review queue. Low significance → auto-discard.</li>
-      <li><strong>Reviewer action:</strong> Team member makes the final credibility call on flagged items. Decision logged for future AI training context.</li>
-      <li><strong>Routine data on disagreement:</strong> Discarded automatically. No human review burden for minor items.</li>
-    </ul>
-  </div>
-
-  <div class="rule-box">
-    <h4>🔌 Data API Outage — Automatic Fallback Chains</h4>
-    <p>Every critical data feed has a pre-configured fallback. If a primary API fails or returns stale data (no update for &gt;5 minutes during market hours), the system automatically switches and notifies the owner.</p>
-    <ul>
-      <li><strong>Polygon.io → yfinance</strong> (market data)</li>
-      <li><strong>Alpha Vantage → yfinance</strong> (technical indicators, reduced set)</li>
-      <li><strong>GNews → RSS feeds + Grok API</strong> (news)</li>
-      <li><strong>Nasdaq Data Link → Yahoo commodity feeds</strong> (commodities, reduced granularity)</li>
-      <li><strong>Grok API → GNews + GDELT</strong> (real-time news)</li>
-      <li><strong>If a fallback is also unavailable:</strong> System halts trades on affected assets until resolved. Full audit log entry created for every fallback event.</li>
-    </ul>
-  </div>
-
-  <div class="rule-box">
-    <h4>📉 Paper Trading Underperformance at Month 8</h4>
-    <p>Tiered deployment based on actual demonstrated performance. All paths require DBS Phase 3 Capital Gate consultation before final commitment.</p>
-    <ul>
-      <li><strong>At or near benchmark</strong> (≥15% long-term / ≥22% short-term annualized): <strong class="green-highlight">Deploy full capital</strong> as planned at Month 9</li>
-      <li><strong>Moderate underperformance</strong> (10–15% long-term / 15–22% short-term): <strong class="gold-highlight">Deploy reduced capital (~50–70%)</strong> to test in live market while preserving runway. Revisit full deployment at next quarterly review.</li>
-      <li><strong>Loss or flat returns</strong> (below 10% long-term / below 15% short-term, or negative): <strong class="red-highlight">Delay live deployment.</strong> Extend paper trading 2–3 months, root-cause analysis with DBS, tune models, reassess.</li>
-    </ul>
-  </div>
-
-  <div class="rule-box">
-    <h4>🌐 DBS Macro Thesis Shift Mid-Project</h4>
-    <p>DBS view is a critical input, but not an auto-execute trigger. Thesis changes prompt mandatory strategic review with owner holding final judgment.</p>
-    <ul>
-      <li><strong>Step 1:</strong> DBS communicates shift via private text chat during regular consultation</li>
-      <li><strong>Step 2:</strong> Owner-AI strategic review session convened within 48 hours. L6 HMM Regime Detection and all macro-aware models re-run with the new thesis as input.</li>
-      <li><strong>Step 3:</strong> Owner makes final call informed by three inputs — DBS view, AI model re-analysis, personal judgment</li>
-      <li><strong>Step 4:</strong> Decision documented at Tier 3 (Structured Template) level given high-stakes nature</li>
-      <li><strong>Step 5:</strong> Any portfolio pivot executed gradually, not all-at-once, to avoid whipsaw</li>
-    </ul>
-  </div>
-</section>
-
-<!-- 12 — 2ND BRAIN KNOWLEDGE DATABASE -->
-<section>
-  <div class="section-label">12 — 2nd Brain Knowledge Database</div>
-  <div class="card-grid">
-    <div class="card card-gold" data-num="★">
-      <h3>Primary: Notion + API</h3>
-      <p class="card-note">Best for a 2–4 person team without dedicated backend engineer. Structured, visual, API-accessible. Claude can write data directly to Notion databases via API. Easy to categorize, tag, and search.</p>
-      <div class="pipe-tags">
-        <span class="ptag ptag-green">Easy Setup</span>
-        <span class="ptag ptag-blue">API Friendly</span>
-        <span class="ptag ptag-blue">Team Collaboration</span>
-      </div>
+    <div class="priority-legend reveal">
+      <div class="pl"><span class="badge p0">P0 &middot; Compulsory</span><p>Project cannot function without this. Subscribe day-1.</p></div>
+      <div class="pl"><span class="badge p1">P1 &middot; Essential</span><p>Core capability. Subscribe day-1, premium tier.</p></div>
+      <div class="pl"><span class="badge p2">P2 &middot; Supporting</span><p>Materially improves quality. Subscribe day-1, entry tier.</p></div>
+      <div class="pl"><span class="badge p3">P3 &middot; Nice-to-have</span><p>Add when budget allows.</p></div>
+      <div class="pl"><span class="badge pf">F &middot; Free</span><p>No subscription cost; just register API key.</p></div>
     </div>
-    <div class="card" data-num="2">
-      <h3>Future Migration: Neo4j Graph DB</h3>
-      <p class="card-note">Consider if relationship complexity between events, companies, sectors, and indicators grows beyond Notion's practical capacity in Year 2. Powerful for pattern discovery but requires backend developer setup.</p>
-      <div class="pipe-tags">
-        <span class="ptag ptag-orange">Dev Required</span>
-        <span class="ptag ptag-gold">Relationship Mapping</span>
-      </div>
-    </div>
-    <div class="card" data-num="3">
-      <h3>Alternative: Obsidian Vault</h3>
-      <p class="card-note">Local markdown-based knowledge base with graph view. Flexible for personal use. Less suited for automation and multi-user workflows without additional plugins.</p>
-      <div class="pipe-tags">
-        <span class="ptag ptag-blue">Local / Private</span>
-        <span class="ptag ptag-yellow">Manual Workflow</span>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- 13 — BUDGET & MONTHLY EXPENSES -->
-<section>
-  <div class="section-label">13 — Budget &amp; Monthly Expenses (฿120K–150K / Year)</div>
-  <div class="budget-grid">
-    <div class="budget-item">
-      <div class="budget-cat">AI APIs</div>
-      <div class="budget-thb">฿43,200</div>
-      <div class="budget-note">Claude + Gemini + Grok API (~36%)</div>
-    </div>
-    <div class="budget-item">
-      <div class="budget-cat">Data APIs</div>
-      <div class="budget-thb">฿32,400</div>
-      <div class="budget-note">Polygon.io + Alpha Vantage + GNews + Nasdaq Data Link (~27%)</div>
-    </div>
-    <div class="budget-item">
-      <div class="budget-cat">Infrastructure</div>
-      <div class="budget-thb">฿24,000</div>
-      <div class="budget-note">Cloud server, TimescaleDB, Redis, automation (~20%)</div>
-    </div>
-    <div class="budget-item">
-      <div class="budget-cat">Tools &amp; Software</div>
-      <div class="budget-thb">฿12,000</div>
-      <div class="budget-note">Notion, monitoring, dev tools, broker API access (~10%)</div>
-    </div>
-    <div class="budget-item">
-      <div class="budget-cat">Buffer / Contingency</div>
-      <div class="budget-thb">฿8,400</div>
-      <div class="budget-note">API overages, premium trials, miscellaneous (~7%)</div>
-    </div>
-  </div>
-
-  <div class="budget-table-section">
-    <h3>Estimated Monthly Expense Breakdown</h3>
-    <table>
-      <thead>
-        <tr><th>Item</th><th>Service</th><th>USD/mo</th><th>THB/mo (≈35฿/$)</th></tr>
-      </thead>
+    <div class="exp-cat-head"><span class="num">Cat. 1</span><span class="ttl">AI APIs</span><span class="sub">Compulsory &middot; Must always have tokens &middot; Routing strategy guarantees availability</span></div>
+    <table class="exp-table reveal">
+      <thead><tr><th style="width:30%">Item &middot; Subscribe</th><th>Role in Project</th><th style="width:9%">USD/mo</th><th style="width:9%">USD/yr</th><th style="width:9%">THB/yr</th></tr></thead>
       <tbody>
-        <tr><td class="tname">Claude API (Opus + Haiku)</td><td>Anthropic</td><td class="td-amount">~$60</td><td class="td-amount">~฿2,100</td></tr>
-        <tr><td class="tname">Gemini API</td><td>Google</td><td class="td-amount">~$20</td><td class="td-amount">~฿700</td></tr>
-        <tr><td class="tname">Grok API (xAI)</td><td>xAI</td><td class="td-amount">~$30</td><td class="td-amount">~฿1,050</td></tr>
-        <tr><td class="tname">Polygon.io</td><td>Market Data</td><td class="td-amount">$29</td><td class="td-amount">~฿1,015</td></tr>
-        <tr><td class="tname">Alpha Vantage Premium</td><td>Market Data</td><td class="td-amount">$50</td><td class="td-amount">~฿1,750</td></tr>
-        <tr><td class="tname">GNews (Real-Time)</td><td>News</td><td class="td-amount">$99</td><td class="td-amount">~฿3,465</td></tr>
-        <tr><td class="tname">Nasdaq Data Link</td><td>Commodities</td><td class="td-amount">~$50</td><td class="td-amount">~฿1,750</td></tr>
-        <tr><td class="tname">Cloud Server (AWS/GCP)</td><td>Infrastructure</td><td class="td-amount">~$40</td><td class="td-amount">~฿1,400</td></tr>
-        <tr><td class="tname">Database Hosting</td><td>Infrastructure</td><td class="td-amount">~$20</td><td class="td-amount">~฿700</td></tr>
-        <tr><td class="tname">Notion + Dev Tools</td><td>Tools</td><td class="td-amount">~$16</td><td class="td-amount">~฿560</td></tr>
-        <tr class="tr-total">
-          <td class="tname tname-total">TOTAL ESTIMATED</td>
-          <td></td>
-          <td class="td-total-value">~$414</td>
-          <td class="td-total-value">~฿14,490</td>
-        </tr>
-        <tr class="tr-total">
-          <td colspan="2" class="td-label-dim">Annualized (×12)</td>
-          <td class="td-annual-value">~$4,968</td>
-          <td class="td-annual-value">~฿173,880</td>
-        </tr>
+        <tr><td class="item">Claude API<span class="badge">P0</span><br/><a class="subscribe-link" href="https://www.anthropic.com/api" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Tri-model validator (Step 2) &middot; Knowledge-graph entity tagger (Step 3) &middot; Quantitative engine pair A (Step 4). Uses Haiku 4.5 / Sonnet 4.6 / Opus 4.7 routed by task.</td><td>90</td><td>1,080</td><td>36,720</td></tr>
+        <tr><td class="item">OpenAI API<span class="badge">P0</span><br/><a class="subscribe-link" href="https://platform.openai.com/docs/pricing" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Tri-model validator (Step 2) &middot; Quantitative engine pair B (Step 4) &middot; Embeddings for vector store. Uses GPT-5-mini / GPT-5.4 / GPT-5.5 routed by task.</td><td>95</td><td>1,140</td><td>38,760</td></tr>
+        <tr><td class="item">Google Gemini API<span class="badge">P0</span><br/><a class="subscribe-link" href="https://ai.google.dev/pricing" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Third validator in tri-model consensus loop (Step 2). Uses Flash 2.5 for routine checks, Pro 3.1 for hard reasoning.</td><td>40</td><td>480</td><td>16,320</td></tr>
+        <tr class="subtot"><td colspan="2">Category 1 subtotal</td><td>225</td><td>2,700</td><td>91,800</td></tr>
       </tbody>
     </table>
-  </div>
 
-  <div class="notice">
-    <strong>⚠ Budget Optimization Note</strong>
-    Annualized estimate (~฿173,880) exceeds the ฿150,000 upper budget by ~16%. Two options to fit within budget: (1) Drop GNews to free tier and use Grok API + free RSS feeds for news coverage — saves ~฿3,465/mo. (2) Drop Nasdaq Data Link until commodity trading actively begins — saves ~฿1,750/mo. Either brings annualized cost to ~฿132,000–฿152,000. During paper-trading months (Month 3–8), API call volumes are lower — actual spend may run 30–40% below full estimate. Personnel cost is ฿0 (team operates voluntarily).
+    <div class="exp-cat-head"><span class="num">Cat. 2</span><span class="ttl">News / Information APIs</span><span class="sub">Trustworthy &middot; Up-to-date &middot; Annual prepay where available (15&ndash;20% off)</span></div>
+    <table class="exp-table reveal">
+      <thead><tr><th style="width:30%">Item &middot; Subscribe</th><th>Role in Project</th><th style="width:9%">USD/mo</th><th style="width:9%">USD/yr</th><th style="width:9%">THB/yr</th></tr></thead>
+      <tbody>
+        <tr><td class="item">Polygon.io Stocks Starter<span class="badge p1">P1</span><br/><a class="subscribe-link" href="https://polygon.io/pricing" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Real-time US equities (15-min delayed on Starter), unlimited API calls, 5 years of history &mdash; short-term portfolio price feed.</td><td>29</td><td>348</td><td>11,832</td></tr>
+        <tr><td class="item">Alpha Vantage Premium 75<span class="badge p1">P1</span><br/><a class="subscribe-link" href="https://www.alphavantage.co/premium/" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">75 requests/min, 15-min delayed real-time US data, 50+ technical indicators, native MCP server for AI agents.</td><td>50</td><td>600</td><td>20,400</td></tr>
+        <tr><td class="item">Financial Modeling Prep Starter<span class="badge p1">P1</span><br/><a class="subscribe-link" href="https://site.financialmodelingprep.com/developer/docs/pricing" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">300 calls/min, 5 years US fundamentals, real-time US quotes, news, crypto/forex &mdash; long-term portfolio core (annual billing).</td><td>22</td><td>264</td><td>8,976</td></tr>
+        <tr><td class="item">Benzinga News API<span class="badge p2">P2</span><br/><a class="subscribe-link" href="https://www.benzinga.com/apis/" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Real-time newswire, squawk, options flow alerts &mdash; short-term signal.</td><td>30</td><td>360</td><td>12,240</td></tr>
+        <tr><td class="item">Finnhub Starter<span class="badge p2">P2</span><br/><a class="subscribe-link" href="https://finnhub.io/pricing" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Reuters news + sentiment + earnings transcripts (shared by both portfolios).</td><td>9</td><td>108</td><td>3,672</td></tr>
+        <tr><td class="item">xAI Grok 4 Fast API<span class="badge p2">P2</span><br/><a class="subscribe-link" href="https://x.ai/api" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Real-time X / news sentiment, breaking-signal detection.</td><td>15</td><td>180</td><td>6,120</td></tr>
+        <tr><td class="item">Tiingo Power<span class="badge p3">P3</span><br/><a class="subscribe-link" href="https://www.tiingo.com/pricing" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Clean intraday equity data, EOD backup feed.</td><td>10</td><td>120</td><td>4,080</td></tr>
+        <tr><td class="item">WSJ Digital (reader)<span class="badge p3">P3</span><br/><a class="subscribe-link" href="https://www.wsj.com/membership" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Tier-1 business journalism for analyst context (no API; reader subscription).</td><td>17</td><td>204</td><td>6,936</td></tr>
+        <tr><td class="item">FRED &middot; SEC EDGAR &middot; GDELT &middot; World Bank &middot; IMF &middot; Yahoo Finance<span class="badge free">FREE</span></td><td class="role">Free official + free open-source sources: all US macro data, primary-source SEC filings, geopolitical events, sovereign macro, mutual fund / ETF coverage.</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr class="subtot"><td colspan="2">Category 2 subtotal</td><td>182</td><td>2,184</td><td>74,256</td></tr>
+      </tbody>
+    </table>
+
+    <div class="exp-cat-head"><span class="num">Cat. 3</span><span class="ttl">Project Infrastructure</span><span class="sub">Must run 24/7 &middot; Hosting, database, CI/CD, monitoring, secrets</span></div>
+    <table class="exp-table reveal">
+      <thead><tr><th style="width:30%">Item &middot; Subscribe</th><th>Role in Project</th><th style="width:9%">USD/mo</th><th style="width:9%">USD/yr</th><th style="width:9%">THB/yr</th></tr></thead>
+      <tbody>
+        <tr><td class="item">Supabase Pro<span class="badge">P0</span><br/><a class="subscribe-link" href="https://supabase.com/pricing" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Postgres + pgvector + AGE graph extension &mdash; combined database for the second brain (Step 3).</td><td>25</td><td>300</td><td>10,200</td></tr>
+        <tr><td class="item">Render Standard<span class="badge">P0</span><br/><a class="subscribe-link" href="https://render.com/pricing" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">24/7 server + cron orchestration for Steps 1&ndash;4 auto-pipeline.</td><td>19</td><td>228</td><td>7,752</td></tr>
+        <tr><td class="item">Sentry Team<span class="badge p1">P1</span><br/><a class="subscribe-link" href="https://sentry.io/pricing/" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Error tracking for the 24/7 pipeline.</td><td>26</td><td>312</td><td>10,608</td></tr>
+        <tr><td class="item">Doppler Team (3 users)<span class="badge p1">P1</span><br/><a class="subscribe-link" href="https://www.doppler.com/pricing" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Secrets vault for AI + data API keys (12+ keys to manage).</td><td>21</td><td>252</td><td>8,568</td></tr>
+        <tr><td class="item">GitHub Team (3 users)<span class="badge p1">P1</span><br/><a class="subscribe-link" href="https://github.com/pricing" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Private repos, CI/CD, code review for the 2&ndash;4 person team.</td><td>12</td><td>144</td><td>4,896</td></tr>
+        <tr><td class="item">Cloudflare R2 Storage<span class="badge p2">P2</span><br/><a class="subscribe-link" href="https://www.cloudflare.com/plans/developer-platform/" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Raw artefact storage (~10 GB), zero egress fees.</td><td>2</td><td>24</td><td>816</td></tr>
+        <tr><td class="item">Cloudflare Free + UptimeRobot Free + Vercel Hobby<span class="badge free">FREE</span></td><td class="role">CDN + DNS + free SSL &middot; Uptime monitoring &middot; Free hosting for owner briefing dashboard.</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr class="subtot"><td colspan="2">Category 3 subtotal</td><td>105</td><td>1,260</td><td>42,840</td></tr>
+      </tbody>
+    </table>
+
+    <div class="exp-cat-head"><span class="num">Cat. 4</span><span class="ttl">Others</span><span class="sub">Charting, domain, owner notification channels</span></div>
+    <table class="exp-table reveal">
+      <thead><tr><th style="width:30%">Item &middot; Subscribe</th><th>Role in Project</th><th style="width:9%">USD/mo</th><th style="width:9%">USD/yr</th><th style="width:9%">THB/yr</th></tr></thead>
+      <tbody>
+        <tr><td class="item">TradingView Essential<span class="badge p2">P2</span><br/><a class="subscribe-link" href="https://www.tradingview.com/pricing/" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Charting, alerts, manual backtest scratchpad.</td><td>13</td><td>156</td><td>5,304</td></tr>
+        <tr><td class="item">Domain (.com)<span class="badge">P0</span><br/><a class="subscribe-link" href="https://www.cloudflare.com/products/registrar/" target="_blank" rel="noopener">Subscribe &rarr;</a></td><td class="role">Project dashboard URL (Cloudflare Registrar &mdash; at-cost pricing).</td><td>1</td><td>15</td><td>510</td></tr>
+        <tr><td class="item">LINE / WhatsApp / Gmail<span class="badge free">FREE</span></td><td class="role">Encrypted owner notifications for Step 5 briefings &mdash; LINE primary (Thai context), WhatsApp + Gmail as fallback channels.</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr class="subtot"><td colspan="2">Category 4 subtotal</td><td>14</td><td>171</td><td>5,814</td></tr>
+      </tbody>
+    </table>
+
+    <div class="exp-cat-head" style="margin-top:48px"><span class="num">&Sigma;</span><span class="ttl">Grand Total</span><span class="sub">All categories + 15% contingency buffer</span></div>
+    <table class="exp-table reveal">
+      <tbody>
+        <tr><td class="item">Category 1 &mdash; AI APIs</td><td class="role">Claude + OpenAI + Gemini, all 3 mandatory</td><td>225</td><td>2,700</td><td>91,800</td></tr>
+        <tr><td class="item">Category 2 &mdash; News / Information APIs</td><td class="role">Premium + free official sources</td><td>182</td><td>2,184</td><td>74,256</td></tr>
+        <tr><td class="item">Category 3 &mdash; Project Infrastructure</td><td class="role">24/7 hosting, database, monitoring</td><td>105</td><td>1,260</td><td>42,840</td></tr>
+        <tr><td class="item">Category 4 &mdash; Others</td><td class="role">Charting, domain, notifications (broker TBD)</td><td>14</td><td>171</td><td>5,814</td></tr>
+        <tr class="subtot"><td colspan="2">Operating subtotal</td><td>526</td><td>6,315</td><td>214,710</td></tr>
+        <tr><td class="item">Contingency (~15%)</td><td class="role">Buffer for token surges, experiments, surprises</td><td>79</td><td>947</td><td>32,198</td></tr>
+        <tr class="total"><td colspan="2">Grand Total &middot; Year 1</td><td>&asymp; 605</td><td>&asymp; 7,262</td><td>&asymp; 246,908</td></tr>
+      </tbody>
+    </table>
+
+    <div class="exp-summary">
+      <div class="b"><div class="l">Monthly &middot; USD</div><div class="v"><span class="sym">$</span>~605</div><div class="s">Including 15% contingency buffer</div></div>
+      <div class="b"><div class="l">Annual &middot; THB</div><div class="v"><span class="sym">&#3647;</span>~247 K</div><div class="s">USD 1 &asymp; THB 34 reference rate</div></div>
+      <div class="b good"><div class="l">Budget Headroom</div><div class="v"><span class="sym">&#3647;</span>~3,090</div><div class="s"><b>Inside the THB 250,000 envelope.</b> Tight but achievable; expand only after Year 1 results justify it.</div></div>
+    </div>
   </div>
 </section>
 
-<!-- 14 — R&D TIMELINE (12 MONTHS) -->
-<section>
-  <div class="section-label">14 — R&amp;D Timeline (12 Months)</div>
-  <div class="timeline">
-    <div class="tl-block">
-      <div class="tl-month">Month 1–2</div>
-      <div class="tl-title">Foundation</div>
-      <div class="tl-items">
-        Connect all 10 data APIs<br>
-        Set up TimescaleDB raw store<br>
-        Set up Notion 2nd brain<br>
-        Claude + Gemini validation pipeline<br>
-        Grok API real-time feed live<br>
-        Short-term broker evaluated &amp; selected
+<section id="consultant">
+  <div class="inner">
+    <div class="sec-header">
+      <div>
+        <div class="sec-eyebrow"><span class="num">V.</span> External Consultant</div>
+        <h2 class="sec-title">DBS Bank <span class="serif">Singapore.</span></h2>
+      </div>
+      <p class="sec-intro">An external consulting relationship anchored to real finance and investment strategy &mdash; distinct from the technical pipeline. The owner's partner serves as the relationship manager (RM) together with the broader DBS team, providing macro views, market access guidance, and portfolio strategy validation across the project's lifecycle.</p>
+    </div>
+
+    <div class="dbs-card">
+      <div class="dbs-grid">
+        <div>
+          <div class="dbs-eb">Project External Consultant</div>
+          <h3>DBS Bank Ltd. &mdash; Singapore</h3>
+          <div class="dbs-meta">Project owner's partner serving as RM together with the wider DBS team &middot; Monthly &amp; quarterly cadence &middot; Communication via private text chat</div>
+          <div class="dbs-tags">
+            <span class="dbs-tag">Real Finance Strategy</span>
+            <span class="dbs-tag">Market Outlook</span>
+            <span class="dbs-tag">Portfolio Validation</span>
+            <span class="dbs-tag">Risk Strategy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dbs-scope-note">
+        <span class="scope-eb">Consulting Scope &middot; Finance &amp; Strategy Only</span>
+        DBS consulting is strictly limited to <b>real finance and investment strategy</b> &mdash; macro market views, portfolio strategy validation, risk assessment, and financial market outlook. All technical, system, AI, and operational topics remain fully internal to the project team. The project owner's partner (serving as RM) and the wider DBS team are the consulting contact. All communication is conducted via <b>private text chat</b>. Each session must have a prepared finance-focused agenda and clear questions ready in advance to respect the team's time.
       </div>
     </div>
-    <div class="tl-block">
-      <div class="tl-month">Month 3–4</div>
-      <div class="tl-title">AI Pipeline + Paper Trade Begins</div>
-      <div class="tl-items">
-        All 15 quant models coded<br>
-        Voting engine built<br>
-        Notification system active<br>
-        <strong class="text-gold2">Paper trading starts — Long-Term</strong><br>
-        First owner ↔ AI discussions
+
+    <div class="scope-bound">
+      <div class="sb in">
+        <div class="sb-eb">DBS Consulting Scope &middot; Finance &amp; Strategy Only</div>
+        <ul>
+          <li>Macro market environment &amp; cycle views</li>
+          <li>US equities, funds &amp; commodities outlook</li>
+          <li>Interest rate &amp; USD direction forecasts</li>
+          <li>Portfolio return target validation</li>
+          <li>Risk strategy &amp; drawdown assessment</li>
+          <li>Capital sizing &amp; deployment strategy</li>
+          <li>Sector rotation &amp; institutional positioning</li>
+          <li>Fund structuring &amp; scale-up planning</li>
+        </ul>
+      </div>
+      <div class="sb out">
+        <div class="sb-eb">Out of Scope &middot; Keep Internal</div>
+        <ul>
+          <li>Individual stock or asset selection</li>
+          <li>Quantitative model design &amp; tuning</li>
+          <li>AI system &amp; API configuration</li>
+          <li>Data pipeline &amp; technical infrastructure</li>
+          <li>Backtesting methodology &amp; code</li>
+          <li>Day-to-day trade execution decisions</li>
+          <li>Short-term signal interpretation</li>
+          <li>Project budget &amp; cost management</li>
+        </ul>
       </div>
     </div>
-    <div class="tl-block">
-      <div class="tl-month">Month 5–8</div>
-      <div class="tl-title">Full Paper Trading</div>
-      <div class="tl-items">
-        <strong class="text-red2">Short-Term paper trading begins</strong><br>
-        Backtest all models vs history<br>
-        Tune signal thresholds<br>
-        Dashboard hybrid (Notion/Grafana/Streamlit) finalized<br>
-        Feedback loop database building
-      </div>
-    </div>
-    <div class="tl-block">
-      <div class="tl-month">Month 9–12</div>
-      <div class="tl-title">Live Capital Deployment</div>
-      <div class="tl-items">
-        <strong class="text-gold2">Full ฿500K deployed at Month 9</strong><br>
-        FX conversion THB → USD (lump sum)<br>
-        Weekly reviews + monthly deep-dives<br>
-        Continuous model optimization<br>
-        Full APEX system operational
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 15 — DBS CONSULTANT -->
-<section>
-  <div class="section-label">15 — External Consultant — DBS Bank Singapore</div>
-
-  <!-- DBS LOGO HEADER -->
-  <div class="dbs-header">
-    <div class="dbs-logo-wrap">
-      <img src="data:image/png;base64,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gCVOlPpidKfUPc6obIKKKKRQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA1/u1DUz/AHahq4mFXcKKKKZkFFFFABRRRQB//9P/AD/6KKKACiiigAooooAKKKKACiiigCVOlPpidKfUPc6obIKKKKRQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA1/u1DUz/AHahq4mFXcKKKKZkFFFFABRRRQB//9T/AD/6KKKACiiigAooooAKKKKACiiigCVOlPpidKfUPc6obIKKKKRQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA1/u1DUz/AHahq4mFXcKKKKZkFFFFABRRRQB//9X/AD/6KKKACiiigAooooAKKKKACiiigCVOlPpidKfUPc6obIKKKKRQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA1/u1DUz/AHahq4mFXcKKKKZkFFFFABRRRQB//9b/AD/6KKKACiiigAooooAKKKKACiiigCVOlPpidKfUPc6obIKKKKRQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA1/u1DUz/AHahq4mFXcKKKKZkFFFFABRRRQB//9k=" alt="DBS Bank" class="dbs-logo-img"/>
-    </div>
-    <div>
-      <div class="dbs-eyebrow">Project External Consultant</div>
-      <div class="dbs-name">DBS Bank Ltd. — Singapore</div>
-      <div class="dbs-desc">Project owner's partner serving as RM together with their DBS team · Monthly / Quarterly · Via Private Text Chat</div>
-      <div class="dbs-tags">
-        <span class="ptag ptag-dbs">Real Finance Strategy</span>
-        <span class="ptag ptag-dbs">Market Outlook</span>
-        <span class="ptag ptag-dbs">Portfolio Validation</span>
-        <span class="ptag ptag-dbs">Risk Strategy</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="dbs-scope-note">
-    <span class="dbs-scope-label">Consulting Scope — Finance &amp; Strategy Only</span>
-    DBS consulting is strictly limited to <strong class="text-highlight">real finance and investment strategy</strong> — macro market views, portfolio strategy validation, risk assessment, and financial market outlook. All technical, system, AI, and operational topics remain fully internal to the project team. Consulting contact is the project owner's partner (serving as RM) together with their DBS team. All communication conducted via <strong class="text-highlight">private text chat</strong>. Each session must have a prepared finance-focused agenda and clear questions ready in advance to respect the team's time.
-  </div>
-
-  <!-- CONSULTING SCHEDULE TABLE -->
-  <div class="dbs-table-heading">● DBS Consulting Schedule by Project Phase</div>
-  <table>
-    <thead>
-      <tr>
-        <th class="th-phase">Project Phase</th>
-        <th class="th-timing-col">Timing</th>
-        <th class="th-format">Format</th>
-        <th>Finance &amp; Strategy Topics to Discuss</th>
-        <th class="th-priority">Priority</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="tname">Phase 1<br><span class="phase-sub">Kickoff &amp; Foundation</span></td>
-        <td class="td-timing">Month 1</td>
-        <td><span class="ptag ptag-gold">PRIVATE<br>TEXT CHAT</span></td>
-        <td class="td-content">
-          <strong class="text-highlight">① Current Macro Environment</strong> — Is the "cash is king → equities accumulation" thesis still valid? Current DBS house view on US equities, interest rates, and 3-year outlook.<br><br>
-          <strong class="text-highlight">② US Market Access &amp; FX Strategy</strong> — Best account structure for Thai residents to access US markets via Singapore. THB→USD conversion strategy to minimize round-trip costs.<br><br>
-          <strong class="text-highlight">③ Sector &amp; Asset Class Outlook</strong> — Which US sectors and commodity classes DBS currently favors given the macro cycle. Which are overvalued or risky to enter now.<br><br>
-          <strong class="text-highlight">④ Risk Framework Sanity Check</strong> — Are return targets (17.5% long-term, 25% short-term) realistic from a professional standpoint given current conditions?
-        </td>
-        <td><span class="ptag ptag-red">CRITICAL</span></td>
-      </tr>
-
-      <tr>
-        <td class="tname">Phase 2<br><span class="phase-sub">Paper Trading Check-In</span></td>
-        <td class="td-timing">Month 4–5</td>
-        <td><span class="ptag ptag-gold">PRIVATE<br>TEXT CHAT</span></td>
-        <td class="td-content">
-          <strong class="text-highlight">① Macro Mid-Point Check</strong> — Has the macro picture changed since Month 1? Any Fed policy shifts, USD moves, or geopolitical developments affecting portfolio strategy assumptions.<br><br>
-          <strong class="text-highlight">② Sector Rotation Intelligence</strong> — What sector rotations is DBS observing institutionally that may not be visible in public market data. Early signals relevant to either portfolio.<br><br>
-          <strong class="text-highlight">③ Paper Trade Results — Finance Perspective</strong> — Share early paper trading performance. Professional finance view on whether direction and magnitude of returns look credible for current conditions.<br><br>
-          <strong class="text-highlight">④ Commodity Market Outlook</strong> — DBS view on gold, oil, agricultural commodities relevant to portfolio exposure.
-        </td>
-        <td><span class="ptag ptag-yellow">HIGH</span></td>
-      </tr>
-
-      <tr>
-        <td class="tname">Phase 3<br><span class="phase-sub">Pre-Live Capital Gate</span></td>
-        <td class="td-timing">Month 8–9</td>
-        <td><span class="ptag ptag-gold">PRIVATE<br>TEXT CHAT</span></td>
-        <td class="td-content">
-          <strong class="text-highlight">① Go / No-Go on Capital Deployment</strong> — Final macro view before real capital committed. Has the 3-year equity accumulation window narrowed or expanded?<br><br>
-          <strong class="text-highlight">② Paper Trading Validation</strong> — Present full paper trading results (5–6 months). Does performance align with professional expectations given market conditions during that period?<br><br>
-          <strong class="text-highlight">③ Portfolio Sizing Strategy</strong> — Sanity check on 70/30 split (฿350K long / ฿150K short) and 5-position concentration for lump-sum Month 9 deployment.<br><br>
-          <strong class="text-highlight">④ Near-Term Risk Landscape</strong> — Scheduled macro events in next 3–6 months (FOMC cycle, elections, earnings seasons) that should delay or accelerate deployment.
-        </td>
-        <td><span class="ptag ptag-red">CRITICAL</span></td>
-      </tr>
-
-      <tr>
-        <td class="tname">Phase 4<br><span class="phase-sub">Quarterly Live Review</span></td>
-        <td class="td-timing">Every Quarter<br>from Month 9</td>
-        <td><span class="ptag ptag-gold">PRIVATE<br>TEXT CHAT</span></td>
-        <td class="td-content">
-          <strong class="text-highlight">① Quarterly Performance Review</strong> — Present actual returns vs 17.5% and 25% benchmarks. DBS assessment of whether underperformance or outperformance is explained by market conditions or strategy gaps.<br><br>
-          <strong class="text-highlight">② Macro Outlook — Next Quarter</strong> — DBS view on US interest rate direction, USD strength, equity valuations, commodity trends. Feeds L6 HMM Regime Detection and S4 Event-Driven models.<br><br>
-          <strong class="text-highlight">③ Tail Risk &amp; Black Swan Awareness</strong> — Any macro risks on 3–6 month horizon warranting more defensive posture.<br><br>
-          <strong class="text-highlight">④ Strategy Refinement</strong> — Based on real performance data, should long-term vs short-term capital split be adjusted? Asset class over/under-exposure.
-        </td>
-        <td><span class="ptag ptag-yellow">MEDIUM · ONGOING</span></td>
-      </tr>
-
-      <tr>
-        <td class="tname">Phase 5<br><span class="phase-sub">Year-End &amp; Scale Planning</span></td>
-        <td class="td-timing">Month 12+<br>(If Warranted)</td>
-        <td><span class="ptag ptag-gold">PRIVATE<br>TEXT CHAT</span></td>
-        <td class="td-content">
-          <strong class="text-highlight">① Full-Year Performance Debrief</strong> — Comprehensive review of 12-month performance. Honest assessment of what worked and what underperformed. Finance strategy for Year 2.<br><br>
-          <strong class="text-highlight">② Capital Scaling Strategy</strong> — If performance justifies, appropriate capital increase for Year 2. How should long-term vs short-term split evolve as system matures.<br><br>
-          <strong class="text-highlight">③ 3-Year Macro Horizon Refresh</strong> — Update original DBS macro thesis. Is the equity accumulation window still open? New 3-year outlook for US markets, rates, commodities.<br><br>
-          <strong class="text-highlight">④ Fund Structuring Consideration</strong> — If AUM has grown meaningfully, is there a case to formalize as a fund or family office structure through Singapore.
-        </td>
-        <td><span class="ptag ptag-yellow">STRATEGIC</span></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <!-- SCOPE BOUNDARY -->
-  <div class="dbs-scope-grid">
-    <div class="dbs-scope-in">
-      <div class="dbs-scope-title">✅ DBS Consulting Scope — Finance &amp; Strategy Only</div>
-      <ul class="dbs-scope-list">
-        <li>Macro market environment &amp; cycle views</li>
-        <li>US equities, funds &amp; commodities outlook</li>
-        <li>Interest rate &amp; USD direction forecasts</li>
-        <li>Portfolio return target validation</li>
-        <li>Risk strategy &amp; drawdown assessment</li>
-        <li>Capital sizing &amp; deployment strategy</li>
-        <li>Sector rotation &amp; institutional positioning</li>
-        <li>Fund structuring &amp; scale-up planning</li>
-      </ul>
-    </div>
-    <div class="dbs-scope-out">
-      <div class="dbs-scope-title-out">✗ Out of Scope — Keep Internal</div>
-      <ul class="dbs-scope-list">
-        <li>Individual stock or asset selection</li>
-        <li>Quant model design &amp; tuning</li>
-        <li>AI system &amp; API configuration</li>
-        <li>Data pipeline &amp; technical infrastructure</li>
-        <li>Backtesting methodology &amp; code</li>
-        <li>Day-to-day trade execution decisions</li>
-        <li>Short-term signal interpretation</li>
-        <li>Project budget &amp; cost management</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="notice notice-mt">
-    <strong>📋 Liability Boundary</strong>
-    All trading decisions and outcomes are the sole responsibility of the project owner. DBS Bank Singapore and the partner RM serve in an advisory capacity only — providing finance and strategy perspective to inform owner-led decisions. No fiduciary or investment management relationship is established by this consulting arrangement.
-  </div>
-</section>
-
-<!-- 16 — PROJECT SUCCESS CRITERIA & YEAR 2 PATHWAY -->
-<section>
-  <div class="section-label">16 — Project Success Criteria &amp; Year 2 Pathway</div>
-
-  <div class="rule-box">
-    <h4>🏆 Success Definition at Month 12 — Dual Condition</h4>
-    <p>Project is considered successful at Month 12 only if <strong class="text-highlight">both conditions</strong> are met. This multi-dimensional definition protects against misleading outcomes (either penalizing a tough market year where beating S&amp;P 500 is a win, or rewarding profitability without system validation).</p>
-    <ul>
-      <li><strong>Performance condition:</strong> Combined portfolio return beats S&amp;P 500 for the 12-month live trading period (or Month 9–12 live period pro-rated)</li>
-      <li><strong>System condition:</strong> Model accuracy is demonstrably validated (voting signals proven correct at statistically meaningful rate), portfolio is profitable, execution has been clean (no major operational failures, no unplanned stop-loss breaches, no compliance issues)</li>
-      <li><strong>One condition met only:</strong> "Conditional Success" — project continues but with mandatory adjustments based on Phase 5 Year-End review</li>
-      <li><strong>Both conditions failed:</strong> Strategic reassessment with DBS to determine pivot or stop</li>
-    </ul>
-  </div>
-
-  <div class="rule-box">
-    <h4>🛑 Stop / Pivot Trigger — Persistent Model Failure</h4>
-    <p><strong class="text-highlight">The primary stop/pivot trigger is model accuracy below 50% for 2 or more consecutive months.</strong> This focuses on system integrity rather than market outcomes — if models are consistently wrong, no amount of market luck will save the project.</p>
-    <ul>
-      <li><strong>Immediate action on trigger:</strong> Halt new trade entries for both portfolios. Existing positions continue under their exit rules.</li>
-      <li><strong>Strategic review convened within 7 days:</strong> Full team + DBS consultation</li>
-      <li><strong>Root cause analysis:</strong> Which models are failing and why? Bad data? Broken assumptions? Missed regime shift?</li>
-      <li><strong>Decision paths:</strong> (a) Fix failing models and resume · (b) Pivot to a different strategy · (c) Pause project and preserve remaining capital</li>
-      <li><strong>Capital loss and benchmark underperformance:</strong> Tracked but do not auto-trigger stops — they feed the strategic review as context</li>
-    </ul>
-  </div>
-
-  <div class="rule-box">
-    <h4>🚀 Year 2 Planning — Multi-Path Decision</h4>
-    <p>Year 2 direction is decided at Month 12 Year-End Review (DBS Phase 5) based on the quality of Year 1 success. Year 2 scope is a Tier 3 documented decision (Structured Template) with full strategic review attended by all project members and DBS consultation.</p>
-    <ul>
-      <li><strong>Clean success path — Scale up:</strong> Year 1 is a clear success (beat S&amp;P 500 comfortably + strong model accuracy + clean execution) → double capital for Year 2 to compound the demonstrated edge</li>
-      <li><strong>Conditional success path — Optimize then scale:</strong> Year 1 succeeded but some models underperformed or specific weaknesses emerged → dedicate first 3–6 months of Year 2 to fixing identified weak models before adding any new capital</li>
-      <li><strong>Open decision path — Decide at Month 12:</strong> Results are ambiguous or market conditions shifted significantly → keep all options open until Phase 5 Year-End consultation. Combined perspective of Year 1 data + current macro view + updated 3-year DBS outlook informs final Year 2 direction</li>
-    </ul>
-  </div>
-</section>
-
-<!-- 17 — KEY RECOMMENDATIONS -->
-<section>
-  <div class="section-label">17 — Key Recommendations &amp; Implementation Notes</div>
-
-  <div class="rec-block">
-    <h4>🏗 Architecture &amp; Tech Stack</h4>
-    <ul>
-      <li>Use <strong>Python</strong> as the primary language — best ecosystem for quant finance (pandas, numpy, scipy, yfinance, QuantLib, statsmodels, arch, hmmlearn, transformers)</li>
-      <li>Use <strong>Apache Airflow or n8n</strong> for orchestrating automated pipeline runs (scheduling, retry logic, alerting)</li>
-      <li>Store raw data in <strong>PostgreSQL with TimescaleDB extension</strong> — time-series optimized and scales well with market data volume</li>
-      <li>Use <strong>Redis</strong> for caching real-time price feeds to avoid redundant API calls</li>
-      <li>Build dashboard with <strong>Notion + Grafana + Streamlit</strong> hybrid (finalized Month 2–3)</li>
-    </ul>
-  </div>
-
-  <div class="rec-block">
-    <h4>🤖 AI Strategy</h4>
-    <ul>
-      <li>Use <strong>Claude Opus</strong> for complex relationship mapping and deep analysis; use <strong>Claude Haiku</strong> for routine data categorization (cost efficiency)</li>
-      <li>Use <strong>xAI Grok API</strong> as the primary real-time news feed — its live X/Twitter data access makes it uniquely fast for detecting breaking market-moving events for short-term signals</li>
-      <li>Use <strong>structured output (JSON mode)</strong> from Claude for quant model inputs — avoids parsing errors</li>
-      <li>Log every AI decision with <strong>input context + output reasoning</strong> for audit trail and future model improvement — this feeds directly into the Notion 2nd brain</li>
-    </ul>
-  </div>
-
-  <div class="rec-block">
-    <h4>⚠ Critical Cautions</h4>
-    <ul>
-      <li><strong>Paper trade Month 3–8 minimum</strong> before deploying real capital — validate model accuracy against live market conditions</li>
-      <li>The <strong>25%/yr short-term target is aggressive</strong> — most hedge funds target 15–25% and sit near the top. Combined with 5-position concentration, single bad picks can hurt. DBS Phase 3 consultation is the final sanity check.</li>
-      <li><strong>Regulatory &amp; broker access:</strong> Short-term broker selection (Month 1–2) must verify Thai resident compatibility and API access. Long-term manual execution needs no special broker setup.</li>
-      <li>Keep AI analysis as a <strong>decision support tool</strong>, not full automation for long-term decisions. Short-term auto-execution is acceptable because the ≥6/8 consensus threshold pre-filters low-confidence trades.</li>
-      <li><strong>Liability boundary:</strong> All trading decisions and outcomes are owner responsibility. DBS provides advisory input only.</li>
-    </ul>
-  </div>
-
-  <div class="rec-block">
-    <h4>💡 Quick Wins (Start Here in Month 1)</h4>
-    <ul>
-      <li>Start with <strong>yfinance + FRED + SEC EDGAR + GDELT</strong> — all free, easy to integrate, cover the core data needs while premium APIs are being set up</li>
-      <li>Use <strong>Notion as the 2nd brain</strong> from day one — low overhead, team-friendly, solid API. Migrate to Neo4j only if relationship complexity genuinely grows in Year 2.</li>
-      <li>Build the <strong>long-term portfolio system first</strong> (simpler, less time-sensitive) before tackling the short-term high-frequency system</li>
-      <li>Schedule <strong>DBS Phase 1 kickoff consultation in Month 1</strong> before too many architecture decisions are locked in — their macro view may shape priorities</li>
-    </ul>
-  </div>
-
-  <div class="rec-block">
-    <h4>📝 Documentation Standards</h4>
-    <ul>
-      <li>Every AI-generated recommendation must log: <strong>input context, all 15 model votes (or 7/8 per portfolio), consensus level, confidence tier, and any supplementary caution flags</strong></li>
-      <li>Every owner-AI discussion must produce <strong>Tier 1 / 2 / 3 documentation</strong> per Section 08, stored in Notion with consistent tagging</li>
-      <li>Every trade execution must log: <strong>entry price, target if applicable, stop level (ATR-based for short-term), model rationale, actual exit price, realized P&amp;L</strong></li>
-      <li>Failures are as valuable as successes in the feedback database — document "what went wrong" with full honesty, not rationalizations</li>
-    </ul>
   </div>
 </section>
 
 <footer>
-  <p class="footer-text">APEX Project Blueprint v2.0 · Execution-Ready · Generated for Internal Planning Purposes Only · Not Financial Advice</p>
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <h4>Apex Quantitative<br/>Investing <span class="serif">Project.</span></h4>
+        <p>Private and confidential. Intended for owner review only. All figures are estimates and subject to revision before the launch phase. No part of this document constitutes investment advice to third parties.</p>
+      </div>
+      <div class="foot-col">
+        <div class="fh">Document</div>
+        <ul>
+          <li>Version &middot; 1.8</li>
+          <li>Issued &middot; 25 April 2026</li>
+          <li>Classification &middot; Private</li>
+          <li>Theme &middot; Black / Red / Gold</li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <div class="fh">Sections</div>
+        <ul>
+          <li><a href="#introduction">I. Introduction</a></li>
+          <li><a href="#sources">I. Data Sources</a></li>
+          <li><a href="#objective">II. Objective</a></li>
+          <li><a href="#workflow">III. System Workflow</a></li>
+          <li><a href="#expense">IV. Expense</a></li>
+          <li><a href="#consultant">V. External Consultant</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <div class="fh">Mandate</div>
+        <ul>
+          <li>US multi-asset coverage</li>
+          <li>Aggressive profile</li>
+          <li>Long &middot; Short &middot; Leverage</li>
+          <li>No margin &middot; No derivatives</li>
+          <li>2&ndash;4 person team</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 APEX &middot; <span class="red">All systems nominal</span></span>
+      <span>Theme &middot; Black &amp; Red &middot; <span class="gold">Gold accent</span></span>
+    </div>
+  </div>
 </footer>
 
-</div>
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+    });
+  },{threshold:0.08});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
 </body>
 </html>
